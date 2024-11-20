@@ -22,7 +22,7 @@ struct SplashScreenView: View {
                     .frame(width: 150, height: 150)
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(Color.white)
+            .background(Color.red)
             .edgesIgnoringSafeArea(.all)
             .onAppear{
                 DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
