@@ -11,6 +11,7 @@
 		0C5B66E72CED9C5E0067ACED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5B66E62CED9C5E0067ACED /* ContentView.swift */; };
 		0C5B66E92CED9C610067ACED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C5B66E82CED9C610067ACED /* Assets.xcassets */; };
 		0C5B66EC2CED9C610067ACED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C5B66EB2CED9C610067ACED /* Preview Assets.xcassets */; };
+		0C87ABAF2CEE588A001237BF /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C87ABAE2CEE588A001237BF /* SplashScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		0C5B66E82CED9C610067ACED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C5B66EB2CED9C610067ACED /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0C5B66ED2CED9C610067ACED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C87ABAE2CEE588A001237BF /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 		0C5B66E32CED9C5E0067ACED /* RicoAppSwift */ = {
 			isa = PBXGroup;
 			children = (
+				0C87ABAC2CEE5777001237BF /* Pantallas */,
 				0C5B66E42CED9C5E0067ACED /* RicoAppSwiftApp.swift */,
 				0C5B66E62CED9C5E0067ACED /* ContentView.swift */,
 				0C5B66E82CED9C610067ACED /* Assets.xcassets */,
@@ -67,6 +70,22 @@
 				0C5B66EB2CED9C610067ACED /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0C87ABAC2CEE5777001237BF /* Pantallas */ = {
+			isa = PBXGroup;
+			children = (
+				0C87ABAD2CEE5783001237BF /* SplashScreen */,
+			);
+			path = Pantallas;
+			sourceTree = "<group>";
+		};
+		0C87ABAD2CEE5783001237BF /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				0C87ABAE2CEE588A001237BF /* SplashScreenView.swift */,
+			);
+			path = SplashScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +159,7 @@
 			files = (
 				0C5B66E72CED9C5E0067ACED /* ContentView.swift in Sources */,
 				0C5B66E52CED9C5E0067ACED /* RicoAppSwiftApp.swift in Sources */,
+				0C87ABAF2CEE588A001237BF /* SplashScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
