@@ -19,7 +19,7 @@ struct MenuView: View {
                         
                 Spacer()
                         
-                Text("Bienvenido a MENU")
+                Text("Bienvenido a MENUuuuu")
                     .font(.largeTitle)
                     .padding()
                 
