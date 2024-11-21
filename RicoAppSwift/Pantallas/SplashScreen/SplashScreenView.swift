@@ -12,7 +12,7 @@ struct SplashScreenView: View {
     
     var body: some View {
         if isActive {
-            ContentView()
+            InicioSesionView()
         } else {
             VStack{
                 Image("logo_ricoapp")
@@ -22,7 +22,7 @@ struct SplashScreenView: View {
                     .frame(width: 150, height: 150)
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(Color.red)
+            .background(Color.white)
             .edgesIgnoringSafeArea(.all)
             .onAppear{
                 DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
