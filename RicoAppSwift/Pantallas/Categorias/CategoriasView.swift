@@ -19,7 +19,7 @@ struct CategoriasView: View {
                         
                 Spacer()
                         
-                Text("Bienvenido a CATEGORIAS")
+                Text("Bienvenido a CATEGORIASssss")
                     .font(.largeTitle)
                     .padding()
                 
