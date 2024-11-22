@@ -19,7 +19,7 @@ struct ReservasView: View {
                         
                 Spacer()
                         
-                Text("Bienvenido a RESERVAssssssssssS")
+                Text("Bienvenido a RESERVaaaAssssssssssS")
                     .font(.largeTitle)
                 
                 Spacer()
