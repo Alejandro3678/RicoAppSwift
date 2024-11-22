@@ -13,6 +13,8 @@
 		0C5B66EC2CED9C610067ACED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C5B66EB2CED9C610067ACED /* Preview Assets.xcassets */; };
 		0C87ABAF2CEE588A001237BF /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C87ABAE2CEE588A001237BF /* SplashScreenView.swift */; };
 		0C87ABB32CEE6E0F001237BF /* InicioSesionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C87ABB22CEE6E0F001237BF /* InicioSesionView.swift */; };
+		0CAA3DBB2CF0077C0005AE98 /* PerfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAA3DBA2CF0077C0005AE98 /* PerfilView.swift */; };
+		0CAA3DBE2CF00E330005AE98 /* PerfilInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAA3DBD2CF00E330005AE98 /* PerfilInfoView.swift */; };
 		0CD6CDAD2CEF8FA9004F1EF7 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD6CDAC2CEF8FA9004F1EF7 /* CustomNavigationBar.swift */; };
 		0CD6CDB12CEF932F004F1EF7 /* CategoriasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD6CDB02CEF932F004F1EF7 /* CategoriasView.swift */; };
 		0CD6CDB62CEF934D004F1EF7 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD6CDB52CEF934D004F1EF7 /* MenuView.swift */; };
@@ -38,6 +40,8 @@
 		0C5B66ED2CED9C610067ACED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C87ABAE2CEE588A001237BF /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		0C87ABB22CEE6E0F001237BF /* InicioSesionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioSesionView.swift; sourceTree = "<group>"; };
+		0CAA3DBA2CF0077C0005AE98 /* PerfilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilView.swift; sourceTree = "<group>"; };
+		0CAA3DBD2CF00E330005AE98 /* PerfilInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilInfoView.swift; sourceTree = "<group>"; };
 		0CD6CDAC2CEF8FA9004F1EF7 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
 		0CD6CDB02CEF932F004F1EF7 /* CategoriasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriasView.swift; sourceTree = "<group>"; };
 		0CD6CDB52CEF934D004F1EF7 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
@@ -107,6 +111,7 @@
 		0C87ABAC2CEE5777001237BF /* Pantallas */ = {
 			isa = PBXGroup;
 			children = (
+				0CAA3DB92CF0074A0005AE98 /* Perfil */,
 				0CD6CDB92CEF9363004F1EF7 /* Reservas */,
 				0CD6CDB42CEF933D004F1EF7 /* Menu */,
 				0CD6CDAF2CEF9317004F1EF7 /* Categorias */,
@@ -133,6 +138,15 @@
 				0C87ABB22CEE6E0F001237BF /* InicioSesionView.swift */,
 			);
 			path = InicioSesion;
+			sourceTree = "<group>";
+		};
+		0CAA3DB92CF0074A0005AE98 /* Perfil */ = {
+			isa = PBXGroup;
+			children = (
+				0CAA3DBA2CF0077C0005AE98 /* PerfilView.swift */,
+				0CAA3DBD2CF00E330005AE98 /* PerfilInfoView.swift */,
+			);
+			path = Perfil;
 			sourceTree = "<group>";
 		};
 		0CD6CDAF2CEF9317004F1EF7 /* Categorias */ = {
@@ -287,12 +301,14 @@
 			files = (
 				0CD6CDAD2CEF8FA9004F1EF7 /* CustomNavigationBar.swift in Sources */,
 				0CE4A4512CEEDB29000C1928 /* RecuperarPasswordView.swift in Sources */,
+				0CAA3DBE2CF00E330005AE98 /* PerfilInfoView.swift in Sources */,
 				0CDDF4C12CEEFFC9000888AF /* CustomAppBarPrimary.swift in Sources */,
 				0C87ABB32CEE6E0F001237BF /* InicioSesionView.swift in Sources */,
 				0CD6CDBB2CEF9373004F1EF7 /* ReservasView.swift in Sources */,
 				0CDDF4C42CEF0354000888AF /* CustomMenuLateral.swift in Sources */,
 				0C5B66E72CED9C5E0067ACED /* ContentView.swift in Sources */,
 				0CD6CDB12CEF932F004F1EF7 /* CategoriasView.swift in Sources */,
+				0CAA3DBB2CF0077C0005AE98 /* PerfilView.swift in Sources */,
 				0CD6CDB62CEF934D004F1EF7 /* MenuView.swift in Sources */,
 				0CF051ED2CEEB90B00035259 /* CustomTextField.swift in Sources */,
 				0C5B66E52CED9C5E0067ACED /* RicoAppSwiftApp.swift in Sources */,
