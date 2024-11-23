@@ -146,10 +146,27 @@ struct SeccionCuerpoReservasView: View {
                 }
  
                 Button(action: {
+                    //Accion a realizar
+                }) {
+                    NavigationLink(destination: RealizarReservaView().navigationBarBackButtonHidden(true) .navigationBarHidden(true)) {
+                        Text("VERIFICAR")
+                            .font(.custom("Roboto Bold", size: 20))
+                            .foregroundColor(.white)
+                            .frame(maxWidth: .infinity, minHeight: 50)
+                            .background(Color.orange)
+                            .cornerRadius(25)
+                            .shadow(color: .gray, radius: 5, x: 0, y: 5)
+                    }
+                }
+                .padding(.top, 50)
+                .padding(.bottom, 20)
+                
+                /*
+                Button(action: {
                     
                 }) {
                     Text("VERIFICAR")
-                        .font(.custom("Actor", size: 25))
+                        .font(.custom("Roboto Bold", size: 20))
                         .foregroundColor(.white)
                         .frame(maxWidth: .infinity, minHeight: 50)
                         .background(Color.orange)
@@ -158,6 +175,7 @@ struct SeccionCuerpoReservasView: View {
                 }
                 .padding(.top, 50)
                 .padding(.bottom, 20)
+                */
             }
             .padding(.horizontal, 20)
         }

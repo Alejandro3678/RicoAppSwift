@@ -45,26 +45,14 @@ struct CustomTarjetaPlatillos: View {
                         .foregroundColor(.orange)
                 }
             }
-            HStack(spacing: 50){
-                Button(action: onAddToCart){
-                    Text("Añadir al carrito")
-                        .font(.custom("Roboto Bold", size: 15))
-                        .foregroundColor(.white)
-                        .padding(.vertical, 8)
-                        .padding(.horizontal, 16)
-                        .background(Color.orange)
-                        .cornerRadius(8)
-                }
-                
-                Button(action: {
-                    print("Eliminar")
-                }){
-                    Image(systemName: "trash.fill")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 35, height: 35)
-                        .foregroundColor(.red)
-                }
+            Button(action: onAddToCart){
+                Text("Añadir al carrito")
+                    .font(.custom("Roboto Bold", size: 15))
+                    .foregroundColor(.white)
+                    .padding(.vertical, 8)
+                    .padding(.horizontal, 16)
+                    .background(Color.orange)
+                    .cornerRadius(8)
             }
             
         }

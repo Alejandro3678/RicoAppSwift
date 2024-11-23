@@ -1,22 +1,29 @@
 //
-//  PerfilView.swift
+//  RealizarReservaView.swift
 //  RicoAppSwift
 //
-//  Created by MacOsX on 11/21/24.
+//  Created by MacOsX on 11/23/24.
 //
 
 import SwiftUI
 
-struct PerfilView: View {
+struct RealizarReservaView: View {
+    //Estado del menu lateral
     @State private var isMenuOpen = false
-
+    
     var body: some View {
         ZStack{
             //Contenido Principal
             VStack{
                 CustomAppBarSecondary(destination: CustomNavigationBar())
                         
-                SeccionCuerpoPerfilView()
+                SeccionCuerpoRealizarReservaView(
+                    nombres: "Daniela",
+                    apellidos: "Perez",
+                    telefono: "7513-2739",
+                    solicitudEspecial: "Nada",
+                    comentarios: "TODO BIEN"
+                )
             }
             .zIndex(0)
             .disabled(isMenuOpen)
@@ -39,12 +46,12 @@ struct PerfilView: View {
                     }
                 }
         )
-        .navigationBarHidden(true)
+        //.ignoresSafeArea()
     }
 }
 
-struct PerfilView_Previews: PreviewProvider {
+struct RealizarReservaView_Previews: PreviewProvider {
     static var previews: some View {
-        PerfilView()
+        RealizarReservaView()
     }
 }

@@ -44,7 +44,7 @@ struct CustomAppBarPrimary: View {
             Spacer()
             
             //Para ir al carrito de compras
-            NavigationLink(destination: ContentView().navigationBarBackButtonHidden(true) .navigationBarHidden(true)) {
+            NavigationLink(destination: PedidosView().navigationBarBackButtonHidden(true) .navigationBarHidden(true)) {
                 Image(systemName: "cart.fill")
                     .resizable()
                     .frame(width: 30, height: 30)

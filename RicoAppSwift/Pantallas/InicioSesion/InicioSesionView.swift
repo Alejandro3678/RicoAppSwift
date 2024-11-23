@@ -68,7 +68,7 @@ struct InicioSesionView: View {
                 }) {
                     NavigationLink(destination: CustomNavigationBar().navigationBarBackButtonHidden(true) .navigationBarHidden(true)) {
                         Text("Iniciar sesion")
-                            .font(.custom("Actor", size: 25))
+                            .font(.custom("Roboto Bold", size: 20))
                             .foregroundColor(.white)
                             .frame(maxWidth: .infinity, minHeight: 50)
                             .background(Color.orange)

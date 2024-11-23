@@ -22,6 +22,7 @@ struct CustomTextField: View {
             if isSecure {
                 SecureField(placeholder, text: $text)
                     .font(.custom("Actor", size: 18))
+                    .foregroundColor(Color(.darkGray))
                     .padding()
                     .background(
                         RoundedRectangle(cornerRadius: 8)
@@ -30,6 +31,7 @@ struct CustomTextField: View {
             } else {
                 TextField(placeholder, text: $text)
                     .font(.custom("Actor", size: 18))
+                    .foregroundColor(Color(.darkGray))
                     .padding()
                     .background(
                         RoundedRectangle(cornerRadius: 8)

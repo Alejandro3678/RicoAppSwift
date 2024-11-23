@@ -38,7 +38,7 @@ struct CustomMenuLateral: View {
                     .frame(height: 1)
                     .foregroundColor(Color.gray)
                 
-                NavigationLink(destination: PerfilInfoView().navigationBarBackButtonHidden(true) .navigationBarHidden(true)) {
+                NavigationLink(destination: PerfilView().navigationBarBackButtonHidden(true) .navigationBarHidden(true)) {
                     HStack{
                         Image(systemName: "person.circle")
                             .resizable()

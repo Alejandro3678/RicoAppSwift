@@ -88,7 +88,7 @@ struct RegistroView: View {
                         
                     }) {
                         Text("Registrarse")
-                            .font(.custom("Actor", size: 25))
+                            .font(.custom("Roboto Bold", size: 20))
                             .foregroundColor(.white)
                             .frame(maxWidth: .infinity, minHeight: 50)
                             .background(Color.orange)

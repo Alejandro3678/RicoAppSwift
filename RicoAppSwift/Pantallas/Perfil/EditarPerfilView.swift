@@ -1,22 +1,22 @@
 //
-//  PerfilView.swift
+//  EditarPerfilView.swift
 //  RicoAppSwift
 //
-//  Created by MacOsX on 11/21/24.
+//  Created by MacOsX on 11/22/24.
 //
 
 import SwiftUI
 
-struct PerfilView: View {
+struct EditarPerfilView: View {
     @State private var isMenuOpen = false
-
+    
     var body: some View {
         ZStack{
             //Contenido Principal
             VStack{
-                CustomAppBarSecondary(destination: CustomNavigationBar())
+                CustomAppBarSecondary(destination: PerfilView())
                         
-                SeccionCuerpoPerfilView()
+                SeccionCuerpoEditarPerfilView()
             }
             .zIndex(0)
             .disabled(isMenuOpen)
@@ -39,12 +39,11 @@ struct PerfilView: View {
                     }
                 }
         )
-        .navigationBarHidden(true)
     }
 }
 
-struct PerfilView_Previews: PreviewProvider {
+struct EditarPerfilView_Previews: PreviewProvider {
     static var previews: some View {
-        PerfilView()
+        EditarPerfilView()
     }
 }
