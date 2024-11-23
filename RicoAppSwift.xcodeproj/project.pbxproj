@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C3DC4EC2CF167220097B2B4 /* PedidosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3DC4EB2CF167220097B2B4 /* PedidosView.swift */; };
 		0C5B66E52CED9C5E0067ACED /* RicoAppSwiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5B66E42CED9C5E0067ACED /* RicoAppSwiftApp.swift */; };
 		0C5B66E72CED9C5E0067ACED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5B66E62CED9C5E0067ACED /* ContentView.swift */; };
 		0C5B66E92CED9C610067ACED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C5B66E82CED9C610067ACED /* Assets.xcassets */; };
 		0C5B66EC2CED9C610067ACED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C5B66EB2CED9C610067ACED /* Preview Assets.xcassets */; };
+		0C74A9E92CF0398C00365588 /* SeccionCuerpoOfertasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C74A9E82CF0398C00365588 /* SeccionCuerpoOfertasView.swift */; };
+		0C74A9EC2CF045E400365588 /* CustomTarjetaOfertas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C74A9EB2CF045E400365588 /* CustomTarjetaOfertas.swift */; };
+		0C7B08412CF16F9D003DFB4A /* CustomTarjetaPedido.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7B08402CF16F9D003DFB4A /* CustomTarjetaPedido.swift */; };
 		0C87ABAF2CEE588A001237BF /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C87ABAE2CEE588A001237BF /* SplashScreenView.swift */; };
 		0C87ABB32CEE6E0F001237BF /* InicioSesionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C87ABB22CEE6E0F001237BF /* InicioSesionView.swift */; };
-		0CAA3DBB2CF0077C0005AE98 /* PerfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAA3DBA2CF0077C0005AE98 /* PerfilView.swift */; };
-		0CAA3DBE2CF00E330005AE98 /* PerfilInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAA3DBD2CF00E330005AE98 /* PerfilInfoView.swift */; };
 		0CD6CDAD2CEF8FA9004F1EF7 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD6CDAC2CEF8FA9004F1EF7 /* CustomNavigationBar.swift */; };
 		0CD6CDB12CEF932F004F1EF7 /* CategoriasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD6CDB02CEF932F004F1EF7 /* CategoriasView.swift */; };
 		0CD6CDB62CEF934D004F1EF7 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD6CDB52CEF934D004F1EF7 /* MenuView.swift */; };
@@ -28,22 +28,31 @@
 		0CDDF4C82CEF0ACF000888AF /* OfertasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDDF4C72CEF0ACF000888AF /* OfertasView.swift */; };
 		0CE4A4512CEEDB29000C1928 /* RecuperarPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE4A4502CEEDB28000C1928 /* RecuperarPasswordView.swift */; };
 		0CE4A45B2CEEE49C000C1928 /* CustomAppBarSecondary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE4A45A2CEEE49C000C1928 /* CustomAppBarSecondary.swift */; };
+		0CE9E9762CF0E45300319CE1 /* robotoitalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0CE9E9732CF0E45200319CE1 /* robotoitalic.ttf */; };
+		0CE9E9772CF0E45300319CE1 /* robotoregular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0CE9E9742CF0E45200319CE1 /* robotoregular.ttf */; };
+		0CE9E9782CF0E45300319CE1 /* robotobold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0CE9E9752CF0E45300319CE1 /* robotobold.ttf */; };
+		0CE9E97B2CF0E61400319CE1 /* CustomTarjetaPlatillos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE9E97A2CF0E61400319CE1 /* CustomTarjetaPlatillos.swift */; };
+		0CE9E97E2CF0EFB900319CE1 /* CustomTarjetasCategorias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE9E97D2CF0EFB900319CE1 /* CustomTarjetasCategorias.swift */; };
+		0CE9E9852CF0F5A300319CE1 /* SeccionCuerpoCategoriasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE9E9842CF0F5A300319CE1 /* SeccionCuerpoCategoriasView.swift */; };
+		0CE9E9882CF0FFB700319CE1 /* SeccionCuerpoMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE9E9872CF0FFB700319CE1 /* SeccionCuerpoMenuView.swift */; };
+		0CE9E98B2CF102D000319CE1 /* SeccionCuerpoReservasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE9E98A2CF102D000319CE1 /* SeccionCuerpoReservasView.swift */; };
+		0CEA9B062CF032F800B34360 /* CarruselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEA9B052CF032F800B34360 /* CarruselView.swift */; };
 		0CF051E82CEEAE3200035259 /* RegistroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF051E72CEEAE3200035259 /* RegistroView.swift */; };
 		0CF051ED2CEEB90B00035259 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF051EC2CEEB90B00035259 /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0C3DC4EB2CF167220097B2B4 /* PedidosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedidosView.swift; sourceTree = "<group>"; };
 		0C5B66E12CED9C5E0067ACED /* RicoAppSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RicoAppSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C5B66E42CED9C5E0067ACED /* RicoAppSwiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RicoAppSwiftApp.swift; sourceTree = "<group>"; };
 		0C5B66E62CED9C5E0067ACED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0C5B66E82CED9C610067ACED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C5B66EB2CED9C610067ACED /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0C5B66ED2CED9C610067ACED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C74A9E82CF0398C00365588 /* SeccionCuerpoOfertasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeccionCuerpoOfertasView.swift; sourceTree = "<group>"; };
+		0C74A9EB2CF045E400365588 /* CustomTarjetaOfertas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTarjetaOfertas.swift; sourceTree = "<group>"; };
+		0C7B08402CF16F9D003DFB4A /* CustomTarjetaPedido.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTarjetaPedido.swift; sourceTree = "<group>"; };
 		0C87ABAE2CEE588A001237BF /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		0C87ABB22CEE6E0F001237BF /* InicioSesionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioSesionView.swift; sourceTree = "<group>"; };
-		0CAA3DBA2CF0077C0005AE98 /* PerfilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilView.swift; sourceTree = "<group>"; };
-		0CAA3DBD2CF00E330005AE98 /* PerfilInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilInfoView.swift; sourceTree = "<group>"; };
 		0CD6CDAC2CEF8FA9004F1EF7 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
 		0CD6CDB02CEF932F004F1EF7 /* CategoriasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriasView.swift; sourceTree = "<group>"; };
 		0CD6CDB52CEF934D004F1EF7 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
@@ -56,6 +65,15 @@
 		0CDDF4C72CEF0ACF000888AF /* OfertasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfertasView.swift; sourceTree = "<group>"; };
 		0CE4A4502CEEDB28000C1928 /* RecuperarPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecuperarPasswordView.swift; sourceTree = "<group>"; };
 		0CE4A45A2CEEE49C000C1928 /* CustomAppBarSecondary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAppBarSecondary.swift; sourceTree = "<group>"; };
+		0CE9E9732CF0E45200319CE1 /* robotoitalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = robotoitalic.ttf; sourceTree = "<group>"; };
+		0CE9E9742CF0E45200319CE1 /* robotoregular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = robotoregular.ttf; sourceTree = "<group>"; };
+		0CE9E9752CF0E45300319CE1 /* robotobold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = robotobold.ttf; sourceTree = "<group>"; };
+		0CE9E97A2CF0E61400319CE1 /* CustomTarjetaPlatillos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTarjetaPlatillos.swift; sourceTree = "<group>"; };
+		0CE9E97D2CF0EFB900319CE1 /* CustomTarjetasCategorias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTarjetasCategorias.swift; sourceTree = "<group>"; };
+		0CE9E9842CF0F5A300319CE1 /* SeccionCuerpoCategoriasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeccionCuerpoCategoriasView.swift; sourceTree = "<group>"; };
+		0CE9E9872CF0FFB700319CE1 /* SeccionCuerpoMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeccionCuerpoMenuView.swift; sourceTree = "<group>"; };
+		0CE9E98A2CF102D000319CE1 /* SeccionCuerpoReservasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeccionCuerpoReservasView.swift; sourceTree = "<group>"; };
+		0CEA9B052CF032F800B34360 /* CarruselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarruselView.swift; sourceTree = "<group>"; };
 		0CF051E72CEEAE3200035259 /* RegistroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroView.swift; sourceTree = "<group>"; };
 		0CF051EC2CEEB90B00035259 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,14 +89,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0C3DC4EA2CF167120097B2B4 /* Pedidos */ = {
-			isa = PBXGroup;
-			children = (
-				0C3DC4EB2CF167220097B2B4 /* PedidosView.swift */,
-			);
-			path = Pedidos;
-			sourceTree = "<group>";
-		};
 		0C5B66D82CED9C5E0067ACED = {
 			isa = PBXGroup;
 			children = (
@@ -121,8 +131,6 @@
 		0C87ABAC2CEE5777001237BF /* Pantallas */ = {
 			isa = PBXGroup;
 			children = (
-				0C3DC4EA2CF167120097B2B4 /* Pedidos */,
-				0CAA3DB92CF0074A0005AE98 /* Perfil */,
 				0CD6CDB92CEF9363004F1EF7 /* Reservas */,
 				0CD6CDB42CEF933D004F1EF7 /* Menu */,
 				0CD6CDAF2CEF9317004F1EF7 /* Categorias */,
@@ -151,19 +159,11 @@
 			path = InicioSesion;
 			sourceTree = "<group>";
 		};
-		0CAA3DB92CF0074A0005AE98 /* Perfil */ = {
-			isa = PBXGroup;
-			children = (
-				0CAA3DBA2CF0077C0005AE98 /* PerfilView.swift */,
-				0CAA3DBD2CF00E330005AE98 /* PerfilInfoView.swift */,
-			);
-			path = Perfil;
-			sourceTree = "<group>";
-		};
 		0CD6CDAF2CEF9317004F1EF7 /* Categorias */ = {
 			isa = PBXGroup;
 			children = (
 				0CD6CDB02CEF932F004F1EF7 /* CategoriasView.swift */,
+				0CE9E9842CF0F5A300319CE1 /* SeccionCuerpoCategoriasView.swift */,
 			);
 			path = Categorias;
 			sourceTree = "<group>";
@@ -172,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				0CD6CDB52CEF934D004F1EF7 /* MenuView.swift */,
+				0CE9E9872CF0FFB700319CE1 /* SeccionCuerpoMenuView.swift */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -180,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				0CD6CDBA2CEF9373004F1EF7 /* ReservasView.swift */,
+				0CE9E98A2CF102D000319CE1 /* SeccionCuerpoReservasView.swift */,
 			);
 			path = Reservas;
 			sourceTree = "<group>";
@@ -195,6 +197,9 @@
 		0CDDF4AD2CEEF7C2000888AF /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				0CE9E9752CF0E45300319CE1 /* robotobold.ttf */,
+				0CE9E9732CF0E45200319CE1 /* robotoitalic.ttf */,
+				0CE9E9742CF0E45200319CE1 /* robotoregular.ttf */,
 				0CDDF4B92CEEF975000888AF /* actor.ttf */,
 				0CDDF4BA2CEEF975000888AF /* allerta.ttf */,
 				0CDDF4BB2CEEF976000888AF /* moresugar.ttf */,
@@ -206,6 +211,8 @@
 			isa = PBXGroup;
 			children = (
 				0CDDF4C72CEF0ACF000888AF /* OfertasView.swift */,
+				0CEA9B052CF032F800B34360 /* CarruselView.swift */,
+				0C74A9E82CF0398C00365588 /* SeccionCuerpoOfertasView.swift */,
 			);
 			path = Ofertas;
 			sourceTree = "<group>";
@@ -234,6 +241,10 @@
 				0CDDF4C02CEEFFC9000888AF /* CustomAppBarPrimary.swift */,
 				0CDDF4C32CEF0354000888AF /* CustomMenuLateral.swift */,
 				0CD6CDAC2CEF8FA9004F1EF7 /* CustomNavigationBar.swift */,
+				0C74A9EB2CF045E400365588 /* CustomTarjetaOfertas.swift */,
+				0CE9E97A2CF0E61400319CE1 /* CustomTarjetaPlatillos.swift */,
+				0CE9E97D2CF0EFB900319CE1 /* CustomTarjetasCategorias.swift */,
+				0C7B08402CF16F9D003DFB4A /* CustomTarjetaPedido.swift */,
 			);
 			path = ComponentesReutilizables;
 			sourceTree = "<group>";
@@ -295,11 +306,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CE9E9782CF0E45300319CE1 /* robotobold.ttf in Resources */,
 				0CDDF4BD2CEEF976000888AF /* allerta.ttf in Resources */,
 				0CDDF4BE2CEEF976000888AF /* moresugar.ttf in Resources */,
+				0CE9E9772CF0E45300319CE1 /* robotoregular.ttf in Resources */,
 				0C5B66EC2CED9C610067ACED /* Preview Assets.xcassets in Resources */,
 				0C5B66E92CED9C610067ACED /* Assets.xcassets in Resources */,
 				0CDDF4BC2CEEF976000888AF /* actor.ttf in Resources */,
+				0CE9E9762CF0E45300319CE1 /* robotoitalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,22 +324,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CE9E97E2CF0EFB900319CE1 /* CustomTarjetasCategorias.swift in Sources */,
 				0CD6CDAD2CEF8FA9004F1EF7 /* CustomNavigationBar.swift in Sources */,
+				0CE9E9882CF0FFB700319CE1 /* SeccionCuerpoMenuView.swift in Sources */,
 				0CE4A4512CEEDB29000C1928 /* RecuperarPasswordView.swift in Sources */,
-				0CAA3DBE2CF00E330005AE98 /* PerfilInfoView.swift in Sources */,
+				0C74A9E92CF0398C00365588 /* SeccionCuerpoOfertasView.swift in Sources */,
 				0CDDF4C12CEEFFC9000888AF /* CustomAppBarPrimary.swift in Sources */,
+				0CE9E98B2CF102D000319CE1 /* SeccionCuerpoReservasView.swift in Sources */,
 				0C87ABB32CEE6E0F001237BF /* InicioSesionView.swift in Sources */,
+				0C74A9EC2CF045E400365588 /* CustomTarjetaOfertas.swift in Sources */,
 				0CD6CDBB2CEF9373004F1EF7 /* ReservasView.swift in Sources */,
 				0CDDF4C42CEF0354000888AF /* CustomMenuLateral.swift in Sources */,
 				0C5B66E72CED9C5E0067ACED /* ContentView.swift in Sources */,
+				0CE9E97B2CF0E61400319CE1 /* CustomTarjetaPlatillos.swift in Sources */,
 				0CD6CDB12CEF932F004F1EF7 /* CategoriasView.swift in Sources */,
-				0CAA3DBB2CF0077C0005AE98 /* PerfilView.swift in Sources */,
 				0CD6CDB62CEF934D004F1EF7 /* MenuView.swift in Sources */,
+				0C7B08412CF16F9D003DFB4A /* CustomTarjetaPedido.swift in Sources */,
+				0CEA9B062CF032F800B34360 /* CarruselView.swift in Sources */,
 				0CF051ED2CEEB90B00035259 /* CustomTextField.swift in Sources */,
 				0C5B66E52CED9C5E0067ACED /* RicoAppSwiftApp.swift in Sources */,
 				0C87ABAF2CEE588A001237BF /* SplashScreenView.swift in Sources */,
+				0CE9E9852CF0F5A300319CE1 /* SeccionCuerpoCategoriasView.swift in Sources */,
 				0CF051E82CEEAE3200035259 /* RegistroView.swift in Sources */,
-				0C3DC4EC2CF167220097B2B4 /* PedidosView.swift in Sources */,
 				0CE4A45B2CEEE49C000C1928 /* CustomAppBarSecondary.swift in Sources */,
 				0CDDF4C82CEF0ACF000888AF /* OfertasView.swift in Sources */,
 			);

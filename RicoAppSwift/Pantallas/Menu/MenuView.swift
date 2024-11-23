@@ -17,13 +17,11 @@ struct MenuView: View {
             VStack{
                 CustomAppBarPrimary(isMenuOpen: $isMenuOpen)
                         
-                Spacer()
+                //Spacer()
                         
-                Text("Bienvenido a MENUuuuu")
-                    .font(.largeTitle)
-                    .padding()
+                SeccionCuerpoMenuView()
                 
-                Spacer()
+                //Spacer()
             }
             .zIndex(0)
             .disabled(isMenuOpen)

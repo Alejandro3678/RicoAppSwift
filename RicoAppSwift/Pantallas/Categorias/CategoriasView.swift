@@ -17,13 +17,11 @@ struct CategoriasView: View {
             VStack{
                 CustomAppBarPrimary(isMenuOpen: $isMenuOpen)
                         
-                Spacer()
+                //Spacer()
                         
-                Text("Bienvenido a CATEGORIASssss")
-                    .font(.largeTitle)
-                    .padding()
+                SeccionCuerpoCategoriasView()
                 
-                Spacer()
+                //Spacer()
             }
             .zIndex(0)
             .disabled(isMenuOpen)
