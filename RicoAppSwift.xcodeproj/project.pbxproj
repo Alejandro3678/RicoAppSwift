@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C3DC4EC2CF167220097B2B4 /* PedidosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3DC4EB2CF167220097B2B4 /* PedidosView.swift */; };
 		0C5B66E52CED9C5E0067ACED /* RicoAppSwiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5B66E42CED9C5E0067ACED /* RicoAppSwiftApp.swift */; };
 		0C5B66E72CED9C5E0067ACED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5B66E62CED9C5E0067ACED /* ContentView.swift */; };
 		0C5B66E92CED9C610067ACED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C5B66E82CED9C610067ACED /* Assets.xcassets */; };
@@ -32,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C3DC4EB2CF167220097B2B4 /* PedidosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedidosView.swift; sourceTree = "<group>"; };
 		0C5B66E12CED9C5E0067ACED /* RicoAppSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RicoAppSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C5B66E42CED9C5E0067ACED /* RicoAppSwiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RicoAppSwiftApp.swift; sourceTree = "<group>"; };
 		0C5B66E62CED9C5E0067ACED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -69,6 +71,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C3DC4EA2CF167120097B2B4 /* Pedidos */ = {
+			isa = PBXGroup;
+			children = (
+				0C3DC4EB2CF167220097B2B4 /* PedidosView.swift */,
+			);
+			path = Pedidos;
+			sourceTree = "<group>";
+		};
 		0C5B66D82CED9C5E0067ACED = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +121,7 @@
 		0C87ABAC2CEE5777001237BF /* Pantallas */ = {
 			isa = PBXGroup;
 			children = (
+				0C3DC4EA2CF167120097B2B4 /* Pedidos */,
 				0CAA3DB92CF0074A0005AE98 /* Perfil */,
 				0CD6CDB92CEF9363004F1EF7 /* Reservas */,
 				0CD6CDB42CEF933D004F1EF7 /* Menu */,
@@ -314,6 +325,7 @@
 				0C5B66E52CED9C5E0067ACED /* RicoAppSwiftApp.swift in Sources */,
 				0C87ABAF2CEE588A001237BF /* SplashScreenView.swift in Sources */,
 				0CF051E82CEEAE3200035259 /* RegistroView.swift in Sources */,
+				0C3DC4EC2CF167220097B2B4 /* PedidosView.swift in Sources */,
 				0CE4A45B2CEEE49C000C1928 /* CustomAppBarSecondary.swift in Sources */,
 				0CDDF4C82CEF0ACF000888AF /* OfertasView.swift in Sources */,
 			);
