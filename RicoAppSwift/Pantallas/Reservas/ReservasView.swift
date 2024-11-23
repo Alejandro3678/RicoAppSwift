@@ -17,12 +17,11 @@ struct ReservasView: View {
             VStack{
                 CustomAppBarPrimary(isMenuOpen: $isMenuOpen)
                         
-                Spacer()
+                //Spacer()
                         
-                Text("Bienvenido a RESERVaaaAssssssssssS")
-                    .font(.largeTitle)
+                SeccionCuerpoReservasView()
                 
-                Spacer()
+                //Spacer()
             }
             .zIndex(0)
             .disabled(isMenuOpen)
