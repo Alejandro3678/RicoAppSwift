@@ -45,7 +45,7 @@ struct CustomTarjetaPlatillos: View {
                         .foregroundColor(.orange)
                 }
             }
-            VStack(alignment: .trailing){
+            HStack(spacing: 50){
                 Button(action: onAddToCart){
                     Text("Añadir al carrito")
                         .font(.custom("Roboto Bold", size: 15))
@@ -54,6 +54,16 @@ struct CustomTarjetaPlatillos: View {
                         .padding(.horizontal, 16)
                         .background(Color.orange)
                         .cornerRadius(8)
+                }
+                
+                Button(action: {
+                    print("Eliminar")
+                }){
+                    Image(systemName: "trash.fill")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 35, height: 35)
+                        .foregroundColor(.red)
                 }
             }
             

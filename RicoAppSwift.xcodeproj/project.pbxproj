@@ -13,6 +13,7 @@
 		0C5B66EC2CED9C610067ACED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C5B66EB2CED9C610067ACED /* Preview Assets.xcassets */; };
 		0C74A9E92CF0398C00365588 /* SeccionCuerpoOfertasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C74A9E82CF0398C00365588 /* SeccionCuerpoOfertasView.swift */; };
 		0C74A9EC2CF045E400365588 /* CustomTarjetaOfertas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C74A9EB2CF045E400365588 /* CustomTarjetaOfertas.swift */; };
+		0C7B08412CF16F9D003DFB4A /* CustomTarjetaPedido.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7B08402CF16F9D003DFB4A /* CustomTarjetaPedido.swift */; };
 		0C87ABAF2CEE588A001237BF /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C87ABAE2CEE588A001237BF /* SplashScreenView.swift */; };
 		0C87ABB32CEE6E0F001237BF /* InicioSesionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C87ABB22CEE6E0F001237BF /* InicioSesionView.swift */; };
 		0CD6CDAD2CEF8FA9004F1EF7 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD6CDAC2CEF8FA9004F1EF7 /* CustomNavigationBar.swift */; };
@@ -49,6 +50,7 @@
 		0C5B66ED2CED9C610067ACED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C74A9E82CF0398C00365588 /* SeccionCuerpoOfertasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeccionCuerpoOfertasView.swift; sourceTree = "<group>"; };
 		0C74A9EB2CF045E400365588 /* CustomTarjetaOfertas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTarjetaOfertas.swift; sourceTree = "<group>"; };
+		0C7B08402CF16F9D003DFB4A /* CustomTarjetaPedido.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTarjetaPedido.swift; sourceTree = "<group>"; };
 		0C87ABAE2CEE588A001237BF /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		0C87ABB22CEE6E0F001237BF /* InicioSesionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioSesionView.swift; sourceTree = "<group>"; };
 		0CD6CDAC2CEF8FA9004F1EF7 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
@@ -242,6 +244,7 @@
 				0C74A9EB2CF045E400365588 /* CustomTarjetaOfertas.swift */,
 				0CE9E97A2CF0E61400319CE1 /* CustomTarjetaPlatillos.swift */,
 				0CE9E97D2CF0EFB900319CE1 /* CustomTarjetasCategorias.swift */,
+				0C7B08402CF16F9D003DFB4A /* CustomTarjetaPedido.swift */,
 			);
 			path = ComponentesReutilizables;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 				0CE9E97B2CF0E61400319CE1 /* CustomTarjetaPlatillos.swift in Sources */,
 				0CD6CDB12CEF932F004F1EF7 /* CategoriasView.swift in Sources */,
 				0CD6CDB62CEF934D004F1EF7 /* MenuView.swift in Sources */,
+				0C7B08412CF16F9D003DFB4A /* CustomTarjetaPedido.swift in Sources */,
 				0CEA9B062CF032F800B34360 /* CarruselView.swift in Sources */,
 				0CF051ED2CEEB90B00035259 /* CustomTextField.swift in Sources */,
 				0C5B66E52CED9C5E0067ACED /* RicoAppSwiftApp.swift in Sources */,
