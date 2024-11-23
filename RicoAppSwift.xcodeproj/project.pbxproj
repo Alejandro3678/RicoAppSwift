@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C3DC4EC2CF167220097B2B4 /* PedidosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3DC4EB2CF167220097B2B4 /* PedidosView.swift */; };
+		0C3DC4F22CF17EAC0097B2B4 /* PerfilInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3DC4F12CF17EAC0097B2B4 /* PerfilInfoView.swift */; };
 		0C5B66E52CED9C5E0067ACED /* RicoAppSwiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5B66E42CED9C5E0067ACED /* RicoAppSwiftApp.swift */; };
 		0C5B66E72CED9C5E0067ACED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5B66E62CED9C5E0067ACED /* ContentView.swift */; };
 		0C5B66E92CED9C610067ACED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C5B66E82CED9C610067ACED /* Assets.xcassets */; };
@@ -16,6 +18,7 @@
 		0C7B08412CF16F9D003DFB4A /* CustomTarjetaPedido.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7B08402CF16F9D003DFB4A /* CustomTarjetaPedido.swift */; };
 		0C87ABAF2CEE588A001237BF /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C87ABAE2CEE588A001237BF /* SplashScreenView.swift */; };
 		0C87ABB32CEE6E0F001237BF /* InicioSesionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C87ABB22CEE6E0F001237BF /* InicioSesionView.swift */; };
+		0CAA3DBB2CF0077C0005AE98 /* PerfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAA3DBA2CF0077C0005AE98 /* PerfilView.swift */; };
 		0CD6CDAD2CEF8FA9004F1EF7 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD6CDAC2CEF8FA9004F1EF7 /* CustomNavigationBar.swift */; };
 		0CD6CDB12CEF932F004F1EF7 /* CategoriasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD6CDB02CEF932F004F1EF7 /* CategoriasView.swift */; };
 		0CD6CDB62CEF934D004F1EF7 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD6CDB52CEF934D004F1EF7 /* MenuView.swift */; };
@@ -42,6 +45,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C3DC4EB2CF167220097B2B4 /* PedidosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedidosView.swift; sourceTree = "<group>"; };
+		0C3DC4F12CF17EAC0097B2B4 /* PerfilInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilInfoView.swift; sourceTree = "<group>"; };
 		0C5B66E12CED9C5E0067ACED /* RicoAppSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RicoAppSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C5B66E42CED9C5E0067ACED /* RicoAppSwiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RicoAppSwiftApp.swift; sourceTree = "<group>"; };
 		0C5B66E62CED9C5E0067ACED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +58,7 @@
 		0C7B08402CF16F9D003DFB4A /* CustomTarjetaPedido.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTarjetaPedido.swift; sourceTree = "<group>"; };
 		0C87ABAE2CEE588A001237BF /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		0C87ABB22CEE6E0F001237BF /* InicioSesionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioSesionView.swift; sourceTree = "<group>"; };
+		0CAA3DBA2CF0077C0005AE98 /* PerfilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilView.swift; sourceTree = "<group>"; };
 		0CD6CDAC2CEF8FA9004F1EF7 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
 		0CD6CDB02CEF932F004F1EF7 /* CategoriasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriasView.swift; sourceTree = "<group>"; };
 		0CD6CDB52CEF934D004F1EF7 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
@@ -89,6 +95,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C3DC4EA2CF167120097B2B4 /* Pedidos */ = {
+			isa = PBXGroup;
+			children = (
+				0C3DC4EB2CF167220097B2B4 /* PedidosView.swift */,
+			);
+			path = Pedidos;
+			sourceTree = "<group>";
+		};
 		0C5B66D82CED9C5E0067ACED = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +145,8 @@
 		0C87ABAC2CEE5777001237BF /* Pantallas */ = {
 			isa = PBXGroup;
 			children = (
+				0C3DC4EA2CF167120097B2B4 /* Pedidos */,
+				0CAA3DB92CF0074A0005AE98 /* Perfil */,
 				0CD6CDB92CEF9363004F1EF7 /* Reservas */,
 				0CD6CDB42CEF933D004F1EF7 /* Menu */,
 				0CD6CDAF2CEF9317004F1EF7 /* Categorias */,
@@ -157,6 +173,15 @@
 				0C87ABB22CEE6E0F001237BF /* InicioSesionView.swift */,
 			);
 			path = InicioSesion;
+			sourceTree = "<group>";
+		};
+		0CAA3DB92CF0074A0005AE98 /* Perfil */ = {
+			isa = PBXGroup;
+			children = (
+				0CAA3DBA2CF0077C0005AE98 /* PerfilView.swift */,
+				0C3DC4F12CF17EAC0097B2B4 /* PerfilInfoView.swift */,
+			);
+			path = Perfil;
 			sourceTree = "<group>";
 		};
 		0CD6CDAF2CEF9317004F1EF7 /* Categorias */ = {
@@ -338,6 +363,7 @@
 				0C5B66E72CED9C5E0067ACED /* ContentView.swift in Sources */,
 				0CE9E97B2CF0E61400319CE1 /* CustomTarjetaPlatillos.swift in Sources */,
 				0CD6CDB12CEF932F004F1EF7 /* CategoriasView.swift in Sources */,
+				0CAA3DBB2CF0077C0005AE98 /* PerfilView.swift in Sources */,
 				0CD6CDB62CEF934D004F1EF7 /* MenuView.swift in Sources */,
 				0C7B08412CF16F9D003DFB4A /* CustomTarjetaPedido.swift in Sources */,
 				0CEA9B062CF032F800B34360 /* CarruselView.swift in Sources */,
@@ -345,7 +371,9 @@
 				0C5B66E52CED9C5E0067ACED /* RicoAppSwiftApp.swift in Sources */,
 				0C87ABAF2CEE588A001237BF /* SplashScreenView.swift in Sources */,
 				0CE9E9852CF0F5A300319CE1 /* SeccionCuerpoCategoriasView.swift in Sources */,
+				0C3DC4F22CF17EAC0097B2B4 /* PerfilInfoView.swift in Sources */,
 				0CF051E82CEEAE3200035259 /* RegistroView.swift in Sources */,
+				0C3DC4EC2CF167220097B2B4 /* PedidosView.swift in Sources */,
 				0CE4A45B2CEEE49C000C1928 /* CustomAppBarSecondary.swift in Sources */,
 				0CDDF4C82CEF0ACF000888AF /* OfertasView.swift in Sources */,
 			);

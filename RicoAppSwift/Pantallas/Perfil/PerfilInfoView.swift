@@ -1,3 +1,10 @@
+//
+//  PerfilInfoView.swift
+//  RicoAppSwift
+//
+//  Created by MacOsX on 11/22/24.
+//
+
 import SwiftUI
 
 struct PerfilInfoView: View {
@@ -5,10 +12,11 @@ struct PerfilInfoView: View {
     @State private var isMenuOpen = false
    
     var body: some View {
+        NavigationView{
         ZStack {
             // Contenido Principal
             VStack {
-                CustomAppBarPrimary(isMenuOpen: $isMenuOpen)
+                CustomAppBarSecondary(destination: OfertasView())
                
                 ScrollView(.vertical) { // ScrollView vertical añadido
                     VStack {
@@ -72,18 +80,20 @@ struct PerfilInfoView: View {
                         // Botones de acción
                         VStack(spacing: 10) {
                             Button(action: {
-                                // Acción para editar información
+                                //Accion a realizar
                             }) {
-                                HStack {
-                                    Image(systemName: "pencil")
-                                    Text("EDITAR INFORMACIÓN")
-                                        .font(.headline)
+                                NavigationLink(destination: PerfilView().navigationBarBackButtonHidden(true) .navigationBarHidden(true)) {
+                                    Text("Editar informacion")
+                                        .font(.custom("Actor", size: 25))
+                                        .foregroundColor(.white)
+                                        .frame(maxWidth: .infinity, minHeight: 50)
+                                        .background(Color.orange)
+                                        .cornerRadius(25)
+                                        .shadow(color: .gray, radius: 5, x: 0, y: 5)
                                 }
-                                .foregroundColor(.orange)
-                                .padding()
-                                .frame(maxWidth: .infinity)
-                                .background(RoundedRectangle(cornerRadius: 5).stroke(Color.orange, lineWidth: 1))
                             }
+                            .padding(.vertical, 10)
+                            
                            
                             Button(action: {
                                 // Acción para cambiar contraseña
@@ -129,6 +139,7 @@ struct PerfilInfoView: View {
                     }
                 }
         )
+        }.navigationBarHidden(true)
     }
 }
 

@@ -19,7 +19,7 @@ struct PerfilView: View {
         ZStack{
             //Contenido Principal
             VStack{
-                CustomAppBarPrimary(isMenuOpen: $isMenuOpen)
+                CustomAppBarSecondary(destination: PerfilInfoView())
                         
                 Spacer()
                         
