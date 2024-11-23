@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0C3DC4EC2CF167220097B2B4 /* PedidosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3DC4EB2CF167220097B2B4 /* PedidosView.swift */; };
+		0C3DC4F22CF17EAC0097B2B4 /* PerfilInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3DC4F12CF17EAC0097B2B4 /* PerfilInfoView.swift */; };
 		0C5B66E52CED9C5E0067ACED /* RicoAppSwiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5B66E42CED9C5E0067ACED /* RicoAppSwiftApp.swift */; };
 		0C5B66E72CED9C5E0067ACED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5B66E62CED9C5E0067ACED /* ContentView.swift */; };
 		0C5B66E92CED9C610067ACED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C5B66E82CED9C610067ACED /* Assets.xcassets */; };
@@ -18,7 +19,6 @@
 		0C87ABAF2CEE588A001237BF /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C87ABAE2CEE588A001237BF /* SplashScreenView.swift */; };
 		0C87ABB32CEE6E0F001237BF /* InicioSesionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C87ABB22CEE6E0F001237BF /* InicioSesionView.swift */; };
 		0CAA3DBB2CF0077C0005AE98 /* PerfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAA3DBA2CF0077C0005AE98 /* PerfilView.swift */; };
-		0CAA3DBE2CF00E330005AE98 /* PerfilInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAA3DBD2CF00E330005AE98 /* PerfilInfoView.swift */; };
 		0CD6CDAD2CEF8FA9004F1EF7 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD6CDAC2CEF8FA9004F1EF7 /* CustomNavigationBar.swift */; };
 		0CD6CDB12CEF932F004F1EF7 /* CategoriasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD6CDB02CEF932F004F1EF7 /* CategoriasView.swift */; };
 		0CD6CDB62CEF934D004F1EF7 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD6CDB52CEF934D004F1EF7 /* MenuView.swift */; };
@@ -46,6 +46,7 @@
 
 /* Begin PBXFileReference section */
 		0C3DC4EB2CF167220097B2B4 /* PedidosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedidosView.swift; sourceTree = "<group>"; };
+		0C3DC4F12CF17EAC0097B2B4 /* PerfilInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilInfoView.swift; sourceTree = "<group>"; };
 		0C5B66E12CED9C5E0067ACED /* RicoAppSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RicoAppSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C5B66E42CED9C5E0067ACED /* RicoAppSwiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RicoAppSwiftApp.swift; sourceTree = "<group>"; };
 		0C5B66E62CED9C5E0067ACED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,7 +59,6 @@
 		0C87ABAE2CEE588A001237BF /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		0C87ABB22CEE6E0F001237BF /* InicioSesionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioSesionView.swift; sourceTree = "<group>"; };
 		0CAA3DBA2CF0077C0005AE98 /* PerfilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilView.swift; sourceTree = "<group>"; };
-		0CAA3DBD2CF00E330005AE98 /* PerfilInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilInfoView.swift; sourceTree = "<group>"; };
 		0CD6CDAC2CEF8FA9004F1EF7 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
 		0CD6CDB02CEF932F004F1EF7 /* CategoriasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriasView.swift; sourceTree = "<group>"; };
 		0CD6CDB52CEF934D004F1EF7 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
@@ -179,7 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				0CAA3DBA2CF0077C0005AE98 /* PerfilView.swift */,
-				0CAA3DBD2CF00E330005AE98 /* PerfilInfoView.swift */,
+				0C3DC4F12CF17EAC0097B2B4 /* PerfilInfoView.swift */,
 			);
 			path = Perfil;
 			sourceTree = "<group>";
@@ -371,6 +371,7 @@
 				0C5B66E52CED9C5E0067ACED /* RicoAppSwiftApp.swift in Sources */,
 				0C87ABAF2CEE588A001237BF /* SplashScreenView.swift in Sources */,
 				0CE9E9852CF0F5A300319CE1 /* SeccionCuerpoCategoriasView.swift in Sources */,
+				0C3DC4F22CF17EAC0097B2B4 /* PerfilInfoView.swift in Sources */,
 				0CF051E82CEEAE3200035259 /* RegistroView.swift in Sources */,
 				0C3DC4EC2CF167220097B2B4 /* PedidosView.swift in Sources */,
 				0CE4A45B2CEEE49C000C1928 /* CustomAppBarSecondary.swift in Sources */,
