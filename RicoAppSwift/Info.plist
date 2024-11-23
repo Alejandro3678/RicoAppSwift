@@ -44,6 +44,9 @@
 		<string>actor.ttf</string>
 		<string>allerta.ttf</string>
 		<string>moresugar.ttf</string>
+		<string>robotobold.ttf</string>
+		<string>robotoitalic.ttf</string>
+		<string>robotoregular.ttf</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>

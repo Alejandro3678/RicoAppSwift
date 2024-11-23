@@ -17,12 +17,11 @@ struct OfertasView: View {
             VStack{
                 CustomAppBarPrimary(isMenuOpen: $isMenuOpen)
                         
-                Spacer()
+                //Spacer()
                         
-                Text("Bienvenido a RicoApp")
-                    .font(.largeTitle)
+                SeccionCuerpoOfertasView()
                 
-                Spacer()
+                //Spacer()
             }
             .zIndex(0)
             .disabled(isMenuOpen)
