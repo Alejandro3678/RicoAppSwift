@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct RegistroView: View {
+    @StateObject private var authViewModel = AuthViewModel()
     @State private var nombres = ""
     @State private var apellidos = ""
     @State private var telefono = ""
     @State private var correo = ""
     @State private var password = ""
+    @State private var errorMessage = ""
     
     var body: some View {
         NavigationView{
@@ -85,7 +87,22 @@ struct RegistroView: View {
                     
                     //Boton de registrarse
                     Button(action: {
-                        
+                        authViewModel.signUp(
+                            nombres: nombres,
+                            apellidos: apellidos,
+                            telefono: telefono,
+                            correo: correo,
+                            password: password)
+                        { result in
+                            switch result {
+                            case .success:
+                                print("Usuario registrado exitosamente")
+                            case .failure(let error):
+                                errorMessage = error.localizedDescription
+                            }
+                            
+                            
+                        }
                     }) {
                         Text("Registrarse")
                             .font(.custom("Roboto Bold", size: 20))
@@ -94,6 +111,14 @@ struct RegistroView: View {
                             .background(Color.orange)
                             .cornerRadius(25)
                             .shadow(color: .gray, radius: 5, x: 0, y: 5)
+                        
+                        if !errorMessage.isEmpty {
+                            Text(errorMessage)
+                                .font(.custom("Actor", size: 18))
+                                .foregroundColor(.red)
+                                .padding()
+                        }
+                        
                     }
                     .padding(.vertical, 10)
                     

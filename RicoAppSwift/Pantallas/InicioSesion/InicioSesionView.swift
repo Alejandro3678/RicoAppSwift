@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct InicioSesionView: View {
-    @State var correo: String = ""
-    @State var password: String = ""
+    @StateObject private var authViewModel = AuthViewModel()
+    @State private var correo = ""
+    @State private var password = ""
+    @State private var errorMessage = ""
     
     var body: some View {
         NavigationView{
@@ -65,6 +67,14 @@ struct InicioSesionView: View {
                 //Boton de iniciar sesion
                 Button(action: {
                     //Accion a realizar
+                    authViewModel.signIn(correo: correo, password: password) { result in
+                        switch result {
+                        case .success:
+                            print("Usuario inicio sesion exitosamente")
+                        case .failure(let error):
+                            errorMessage = error.localizedDescription
+                        }
+                    }
                 }) {
                     NavigationLink(destination: CustomNavigationBar().navigationBarBackButtonHidden(true) .navigationBarHidden(true)) {
                         Text("Iniciar sesion")
@@ -75,9 +85,17 @@ struct InicioSesionView: View {
                             .cornerRadius(25)
                             .shadow(color: .gray, radius: 5, x: 0, y: 5)
                     }
+                    
+                    if !errorMessage.isEmpty {
+                        Text(errorMessage)
+                            .font(.custom("Actor", size: 18))
+                            .foregroundColor(.red)
+                            .padding()
+                    }
+                    
                 }
                 .padding(.vertical, 10)
-                
+
                 //No estas registrado
                 HStack{
                     Text("¿No estas registrado?")
