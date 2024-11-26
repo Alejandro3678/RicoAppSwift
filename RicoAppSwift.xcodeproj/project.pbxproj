@@ -35,6 +35,7 @@
 		0CD6D26D2CF2CAEB00F9C18D /* Usuarios.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD6D26C2CF2CAEB00F9C18D /* Usuarios.swift */; };
 		0CD6D2712CF2D06300F9C18D /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD6D2702CF2D06300F9C18D /* AuthViewModel.swift */; };
 		0CD87A012CF21A5300560783 /* SeccionCuerpoPedidosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD87A002CF21A5300560783 /* SeccionCuerpoPedidosView.swift */; };
+		0CDCC0442CF5310300AB647A /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDCC0432CF5310300AB647A /* CustomAlert.swift */; };
 		0CDDF4BC2CEEF976000888AF /* actor.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0CDDF4B92CEEF975000888AF /* actor.ttf */; };
 		0CDDF4BD2CEEF976000888AF /* allerta.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0CDDF4BA2CEEF975000888AF /* allerta.ttf */; };
 		0CDDF4BE2CEEF976000888AF /* moresugar.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0CDDF4BB2CEEF976000888AF /* moresugar.ttf */; };
@@ -43,6 +44,8 @@
 		0CDDF4C82CEF0ACF000888AF /* OfertasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDDF4C72CEF0ACF000888AF /* OfertasView.swift */; };
 		0CE4A4512CEEDB29000C1928 /* RecuperarPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE4A4502CEEDB28000C1928 /* RecuperarPasswordView.swift */; };
 		0CE4A45B2CEEE49C000C1928 /* CustomAppBarSecondary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE4A45A2CEEE49C000C1928 /* CustomAppBarSecondary.swift */; };
+		0CE5A3E92CF6811100C55F98 /* UsuarioViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE5A3E82CF6811100C55F98 /* UsuarioViewModel.swift */; };
+		0CE5A3EC2CF68A9A00C55F98 /* RecuperarPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE5A3EB2CF68A9A00C55F98 /* RecuperarPasswordViewModel.swift */; };
 		0CE9E9762CF0E45300319CE1 /* robotoitalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0CE9E9732CF0E45200319CE1 /* robotoitalic.ttf */; };
 		0CE9E9772CF0E45300319CE1 /* robotoregular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0CE9E9742CF0E45200319CE1 /* robotoregular.ttf */; };
 		0CE9E9782CF0E45300319CE1 /* robotobold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0CE9E9752CF0E45300319CE1 /* robotobold.ttf */; };
@@ -84,6 +87,7 @@
 		0CD6D26C2CF2CAEB00F9C18D /* Usuarios.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuarios.swift; sourceTree = "<group>"; };
 		0CD6D2702CF2D06300F9C18D /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		0CD87A002CF21A5300560783 /* SeccionCuerpoPedidosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeccionCuerpoPedidosView.swift; sourceTree = "<group>"; };
+		0CDCC0432CF5310300AB647A /* CustomAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
 		0CDDF4B92CEEF975000888AF /* actor.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = actor.ttf; sourceTree = "<group>"; };
 		0CDDF4BA2CEEF975000888AF /* allerta.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = allerta.ttf; sourceTree = "<group>"; };
 		0CDDF4BB2CEEF976000888AF /* moresugar.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = moresugar.ttf; sourceTree = "<group>"; };
@@ -92,6 +96,8 @@
 		0CDDF4C72CEF0ACF000888AF /* OfertasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfertasView.swift; sourceTree = "<group>"; };
 		0CE4A4502CEEDB28000C1928 /* RecuperarPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecuperarPasswordView.swift; sourceTree = "<group>"; };
 		0CE4A45A2CEEE49C000C1928 /* CustomAppBarSecondary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAppBarSecondary.swift; sourceTree = "<group>"; };
+		0CE5A3E82CF6811100C55F98 /* UsuarioViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsuarioViewModel.swift; sourceTree = "<group>"; };
+		0CE5A3EB2CF68A9A00C55F98 /* RecuperarPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecuperarPasswordViewModel.swift; sourceTree = "<group>"; };
 		0CE9E9732CF0E45200319CE1 /* robotoitalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = robotoitalic.ttf; sourceTree = "<group>"; };
 		0CE9E9742CF0E45200319CE1 /* robotoregular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = robotoregular.ttf; sourceTree = "<group>"; };
 		0CE9E9752CF0E45300319CE1 /* robotobold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = robotobold.ttf; sourceTree = "<group>"; };
@@ -276,6 +282,8 @@
 			isa = PBXGroup;
 			children = (
 				0CD6D2702CF2D06300F9C18D /* AuthViewModel.swift */,
+				0CE5A3E82CF6811100C55F98 /* UsuarioViewModel.swift */,
+				0CE5A3EB2CF68A9A00C55F98 /* RecuperarPasswordViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -339,6 +347,7 @@
 				0CE9E97A2CF0E61400319CE1 /* CustomTarjetaPlatillos.swift */,
 				0CE9E97D2CF0EFB900319CE1 /* CustomTarjetasCategorias.swift */,
 				0C7B08402CF16F9D003DFB4A /* CustomTarjetaPedido.swift */,
+				0CDCC0432CF5310300AB647A /* CustomAlert.swift */,
 			);
 			path = ComponentesReutilizables;
 			sourceTree = "<group>";
@@ -432,12 +441,14 @@
 				0CF8FFD52CF22415002B284B /* SeccionCuerpoRealizarReservaView.swift in Sources */,
 				0CE9E97E2CF0EFB900319CE1 /* CustomTarjetasCategorias.swift in Sources */,
 				0CD6CDAD2CEF8FA9004F1EF7 /* CustomNavigationBar.swift in Sources */,
+				0CDCC0442CF5310300AB647A /* CustomAlert.swift in Sources */,
 				0CE9E9882CF0FFB700319CE1 /* SeccionCuerpoMenuView.swift in Sources */,
 				0CD6D26D2CF2CAEB00F9C18D /* Usuarios.swift in Sources */,
 				0CE4A4512CEEDB29000C1928 /* RecuperarPasswordView.swift in Sources */,
 				0C74A9E92CF0398C00365588 /* SeccionCuerpoOfertasView.swift in Sources */,
 				0CDDF4C12CEEFFC9000888AF /* CustomAppBarPrimary.swift in Sources */,
 				0CE9E98B2CF102D000319CE1 /* SeccionCuerpoReservasView.swift in Sources */,
+				0CE5A3E92CF6811100C55F98 /* UsuarioViewModel.swift in Sources */,
 				0C87ABB32CEE6E0F001237BF /* InicioSesionView.swift in Sources */,
 				0CD6D2712CF2D06300F9C18D /* AuthViewModel.swift in Sources */,
 				0C74A9EC2CF045E400365588 /* CustomTarjetaOfertas.swift in Sources */,
@@ -457,6 +468,7 @@
 				0C5B66E52CED9C5E0067ACED /* RicoAppSwiftApp.swift in Sources */,
 				0C87ABAF2CEE588A001237BF /* SplashScreenView.swift in Sources */,
 				0CE9E9852CF0F5A300319CE1 /* SeccionCuerpoCategoriasView.swift in Sources */,
+				0CE5A3EC2CF68A9A00C55F98 /* RecuperarPasswordViewModel.swift in Sources */,
 				0CF051E82CEEAE3200035259 /* RegistroView.swift in Sources */,
 				0CD6D2692CF2C8EE00F9C18D /* AuthService.swift in Sources */,
 				0C3DC4EC2CF167220097B2B4 /* PedidosView.swift in Sources */,

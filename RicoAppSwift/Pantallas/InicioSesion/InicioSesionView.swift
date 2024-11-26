@@ -11,72 +11,100 @@ struct InicioSesionView: View {
     @StateObject private var authViewModel = AuthViewModel()
     @State private var correo = ""
     @State private var password = ""
-    @State private var errorMessage = ""
+    @State private var alertaVisible = false
+    @State private var mensaje = ""
+    @State private var iconName = ""
+    @State private var iconColor = Color.red
+    @State private var shouldNavigate = false
     
-    var body: some View {
-        NavigationView{
-            VStack(spacing: 20) {
-                //SECCION ENCABEZADO
-                //Logo RicoApp
-                Image("logo_ricoapp")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 100, height: 100)
-                    .padding(.top, 40)
-                
-                //Mensaje de bienvenida
-                Text("Iniciar Sesion")
-                    .font(.custom("Allerta", size: 40))
-                    .fontWeight(.bold)
-                    .foregroundColor(.black)
-                Text("Bienvenido/a")
-                    .font(.custom("Actor", size: 20))
-                    .foregroundColor(.gray)
-                
-                Spacer().frame(height: 20)
-                
-                //SECCION CUERPO
-                //Correo Electronico
-                CustomTextField(
-                    placeholder: "Ingrese su correo",
-                    text: $correo,
-                    title: "Correo Electronico",
-                    keyboardType: .emailAddress
-                )
-                
-                //Contraseña
-                CustomTextField(
-                    placeholder: "Ingrese su contraseña",
-                    text: $password,
-                    title: "Contraseña",
-                    isSecure: true
-                )
-                
-                //Olvidaste tu contraseña
-                HStack{
-                    VStack{
-                        Text("¿Olvidaste tu contraseña?")
-                            .font(.custom("Allerta", size: 18))
-                            .foregroundColor(.black)
-                        NavigationLink("Presiona aqui", destination: RecuperarPasswordView().navigationBarBackButtonHidden(true) .navigationBarHidden(true))
-                            .foregroundColor(.orange)
-                            .font(.custom("Actor", size: 18))
-                    }
-                }
-                
-                //Boton de iniciar sesion
-                Button(action: {
-                    //Accion a realizar
-                    authViewModel.signIn(correo: correo, password: password) { result in
+    func logueoUsuario(){
+        if (correo.isEmpty || password.isEmpty){
+            iconName = "xmark.circle.fill"
+            iconColor = .red
+            mensaje = "Por favor rellene todos los campos"
+            alertaVisible.toggle()
+            } else {
+                authViewModel.signIn(correo: correo, password: password) { result in
+                    DispatchQueue.main.async {
                         switch result {
                         case .success:
-                            print("Usuario inicio sesion exitosamente")
-                        case .failure(let error):
-                            errorMessage = error.localizedDescription
+                            withAnimation {
+                                shouldNavigate = true
+                            }
+                        case .failure:
+                            iconName = "xmark.circle.fill"
+                            iconColor = .red
+                            mensaje = "Digita tus credenciales correctamente"
+                            alertaVisible.toggle()
+                        }
+                        limpiarCampos()
+                    }
+                }
+            }
+    }
+    
+    func limpiarCampos() {
+        correo = ""
+        password = ""
+    }
+    
+    var body: some View {
+        ZStack{
+            NavigationView{
+                VStack(spacing: 20) {
+                    //SECCION ENCABEZADO
+                    //Logo RicoApp
+                    Image("logo_ricoapp")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 100, height: 100)
+                        .padding(.top, 40)
+                    
+                    //Mensaje de bienvenida
+                    Text("Iniciar Sesion")
+                        .font(.custom("Allerta", size: 40))
+                        .fontWeight(.bold)
+                        .foregroundColor(.black)
+                    Text("Bienvenido/a")
+                        .font(.custom("Actor", size: 20))
+                        .foregroundColor(.gray)
+                    
+                    Spacer().frame(height: 20)
+                    
+                    //SECCION CUERPO
+                    //Correo Electronico
+                    CustomTextField(
+                        placeholder: "Ingrese su correo",
+                        text: $correo,
+                        title: "Correo Electronico",
+                        keyboardType: .emailAddress
+                    )
+                    
+                    //Contraseña
+                    CustomTextField(
+                        placeholder: "Ingrese su contraseña",
+                        text: $password,
+                        title: "Contraseña",
+                        isSecure: true
+                    )
+                    
+                    //Olvidaste tu contraseña
+                    HStack{
+                        VStack{
+                            Text("¿Olvidaste tu contraseña?")
+                                .font(.custom("Allerta", size: 18))
+                                .foregroundColor(.black)
+                            NavigationLink("Presiona aqui", destination: RecuperarPasswordView().navigationBarBackButtonHidden(true) .navigationBarHidden(true))
+                                .foregroundColor(.orange)
+                                .font(.custom("Actor", size: 18))
                         }
                     }
-                }) {
-                    NavigationLink(destination: CustomNavigationBar().navigationBarBackButtonHidden(true) .navigationBarHidden(true)) {
+                    
+                    //Boton de iniciar sesion
+                    Button(action: {
+                        //Accion a realizar
+                        logueoUsuario()
+                    }) {
                         Text("Iniciar sesion")
                             .font(.custom("Roboto Bold", size: 20))
                             .foregroundColor(.white)
@@ -85,32 +113,43 @@ struct InicioSesionView: View {
                             .cornerRadius(25)
                             .shadow(color: .gray, radius: 5, x: 0, y: 5)
                     }
+                    .padding(.vertical, 10)
                     
-                    if !errorMessage.isEmpty {
-                        Text(errorMessage)
-                            .font(.custom("Actor", size: 18))
-                            .foregroundColor(.red)
-                            .padding()
-                    }
-                    
-                }
-                .padding(.vertical, 10)
+                    //Navegacion condicional
+                    NavigationLink(
+                        destination: CustomNavigationBar()
+                            .navigationBarBackButtonHidden(true)
+                            .navigationBarHidden(true),
+                        isActive: $shouldNavigate
+                    ){}
 
-                //No estas registrado
-                HStack{
-                    Text("¿No estas registrado?")
-                        .font(.custom("Allerta", size: 18))
-                        .foregroundColor(.black)
-                    NavigationLink("Registrate", destination: RegistroView().navigationBarBackButtonHidden(true) .navigationBarHidden(true))
-                        .foregroundColor(.orange)
-                        .font(.custom("Actor", size: 18))
+                    //No estas registrado
+                    HStack{
+                        Text("¿No estas registrado?")
+                            .font(.custom("Allerta", size: 18))
+                            .foregroundColor(.black)
+                        NavigationLink("Registrate", destination: RegistroView().navigationBarBackButtonHidden(true) .navigationBarHidden(true))
+                            .foregroundColor(.orange)
+                            .font(.custom("Actor", size: 18))
+                    }
                 }
-                
-                Spacer()
+                .padding(.horizontal, 20)
+                .navigationBarHidden(true)
             }
-            .padding(.horizontal, 20)
-            .navigationBarHidden(true)
-            
+            //aqui
+            if self.alertaVisible {
+                GeometryReader{ geometry in
+                    CustomAlert(
+                        alertaVisible: $alertaVisible,
+                        iconName: iconName,
+                        iconColor: iconColor,
+                        mensaje: mensaje
+                    )
+                    .frame(width: geometry.size.width * 0.8, height: geometry.size.height * 0.3)
+                    .position(x: geometry.size.width / 2, y: geometry.size.height / 2)
+                }
+                .background(Color.black.opacity(0.35).edgesIgnoringSafeArea(.all))
+            }
         }
     }
 }
@@ -120,3 +159,4 @@ struct InicioSesionView_Previews: PreviewProvider {
         InicioSesionView()
     }
 }
+

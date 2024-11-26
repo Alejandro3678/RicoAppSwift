@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct SeccionCuerpoOfertasView: View {
-    @State private var nombreUsuario: String = "Jonathan Josue Dominguez Gomez"
+    @StateObject private var usuarioViewModel = UsuarioViewModel()
     
     var body: some View {
         ScrollView(.vertical, showsIndicators: false){
             VStack(alignment: .leading, spacing: 10){
                 //Seccion mensaje de bienvenida a usuario
                 VStack(alignment: .leading){
-                    Text("¡Hola, \(nombreUsuario)!")
+                    Text("¡Hola, \(usuarioViewModel.nombreCompleto)!")
                         .font(.custom("Roboto Bold", size: 24))
                         .foregroundColor(.orange)
                     Rectangle()
@@ -72,6 +72,9 @@ struct SeccionCuerpoOfertasView: View {
             .padding(.bottom, 20)
         }
         .padding(.horizontal, 20)
+        .onAppear{
+            usuarioViewModel.fetchUsuario()
+        }
     }
 }
 

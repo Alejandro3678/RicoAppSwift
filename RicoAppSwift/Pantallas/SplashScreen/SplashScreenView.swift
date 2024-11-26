@@ -9,10 +9,16 @@ import SwiftUI
 
 struct SplashScreenView: View {
     @State private var isActive = false
+    @StateObject private var authViewModel = AuthViewModel()
     
     var body: some View {
         if isActive {
-            InicioSesionView()
+            //InicioSesionView()
+            if authViewModel.isAuthenticated{
+                CustomNavigationBar()
+            } else {
+                InicioSesionView()
+            }
         } else {
             VStack{
                 Image("logo_ricoapp")

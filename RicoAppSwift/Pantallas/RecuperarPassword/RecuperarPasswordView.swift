@@ -9,6 +9,7 @@ import SwiftUI
 
 struct RecuperarPasswordView: View {
     @State private var correo = ""
+    @StateObject private var recuperarPasswordViewModel = RecuperarPasswordViewModel()
     
     var body: some View {
         NavigationView{
@@ -24,6 +25,7 @@ struct RecuperarPasswordView: View {
                     
                     Button(action: {
                         //accion
+                        recuperarPasswordViewModel.enviarCorreoRecuperacion()
                     }) {
                         Text("ENVIAR")
                             .font(.custom("Actor", size: 25))
@@ -38,6 +40,9 @@ struct RecuperarPasswordView: View {
                     Spacer()
                 }
                 .padding(.horizontal, 20)
+                .alert(isPresented: $recuperarPasswordViewModel.showAlert){
+                    Alert(title: Text("Recuperación de contraseña"), message: Text(recuperarPasswordViewModel.alertMessage), dismissButton: .default(Text("Aceptar")))
+                }
                 .navigationBarHidden(true)
             }
         }

@@ -9,6 +9,8 @@ import SwiftUI
 
 struct CustomMenuLateral: View {
     @Binding var isMenuOpen: Bool
+    @ObservedObject var authViewModel: AuthViewModel
+    @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
         ZStack(alignment: .leading){
@@ -54,8 +56,12 @@ struct CustomMenuLateral: View {
                     .padding(.horizontal)
                 }
                 
-                NavigationLink(destination: InicioSesionView().navigationBarBackButtonHidden(true) .navigationBarHidden(true)) {
+                Button(action: {
+                    cerrarSesion()
+                }){
+                    //Para para cerrar sesion
                     HStack{
+                        //Para para cerrar sesion
                         Image(systemName: "arrowshape.turn.up.left")
                             .resizable()
                             .frame(width: 30, height: 30)
@@ -65,16 +71,33 @@ struct CustomMenuLateral: View {
                             .foregroundColor(.white)
                             .fontWeight(.bold)
                     }
-                    .font(.headline)
                     .padding(.vertical)
                     .padding(.horizontal)
                 }
+            
                 Spacer()
             }
             .frame(width: 250)
             .background(Color.orange)
         }
     }
+    
+    func cerrarSesion(){
+        authViewModel.signOut{ result in
+            DispatchQueue.main.async {
+                switch result {
+                case .success:
+                    withAnimation{
+                        isMenuOpen = false
+                    }
+                    presentationMode.wrappedValue.dismiss()
+                case .failure(let error):
+                    print("Error al cerrar sesion: \(error.localizedDescription)")
+                }
+            }
+        }
+    }
+    
 }
 
 

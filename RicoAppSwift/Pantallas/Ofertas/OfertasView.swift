@@ -10,6 +10,7 @@ import SwiftUI
 struct OfertasView: View {
     //Estado del menu lateral
     @State private var isMenuOpen = false
+    @StateObject private var authViewModel = AuthViewModel()
     
     var body: some View {
         ZStack{
@@ -28,7 +29,7 @@ struct OfertasView: View {
                     
             //Menu lateral
             if isMenuOpen {
-                CustomMenuLateral(isMenuOpen: $isMenuOpen)
+                CustomMenuLateral(isMenuOpen: $isMenuOpen, authViewModel: authViewModel).transition(.move(edge: .leading))
                     .zIndex(1)
                     .transition(.move(edge: .leading))
             }

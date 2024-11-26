@@ -9,6 +9,7 @@ import SwiftUI
 
 struct PedidosView: View {
     @State private var isMenuOpen = false
+    @StateObject private var authViewModel = AuthViewModel()
 
     var body: some View {
         ZStack{
@@ -23,7 +24,7 @@ struct PedidosView: View {
                     
             //Menu lateral
             if isMenuOpen {
-                CustomMenuLateral(isMenuOpen: $isMenuOpen)
+                CustomMenuLateral(isMenuOpen: $isMenuOpen, authViewModel: authViewModel).transition(.move(edge: .leading))
                     .zIndex(1)
                     .transition(.move(edge: .leading))
             }

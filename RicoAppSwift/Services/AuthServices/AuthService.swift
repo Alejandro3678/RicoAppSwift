@@ -15,7 +15,7 @@ class AuthService{
     //PARA REGISTRARSE
     func signUp(nombres: String, apellidos: String, telefono: String, correo: String, password: String, completion: @escaping (Result<Void, Error>) -> Void) {
         Auth.auth().createUser(withEmail: correo, password: password) { authResult, error in
-            if let error = error {
+            if let error = error as NSError? {
                 completion(.failure(error))
                 return
             }
@@ -59,5 +59,16 @@ class AuthService{
                 completion(.failure(signOutError))
             }
     }
-
+    
+    //RESTABLECER CONTRASEÑA
+    func resetPassword(correo: String, completion: @escaping (Result<Void, Error>) -> Void){
+        Auth.auth().sendPasswordReset(withEmail: correo) { error in
+            if let error = error {
+                completion(.failure(error))
+            } else {
+                completion(.success(()))
+            }
+        }
+    }
+    
 }
