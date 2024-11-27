@@ -9,6 +9,7 @@ import SwiftUI
 
 struct SeccionCuerpoOfertasView: View {
     @StateObject private var usuarioViewModel = UsuarioViewModel()
+    @StateObject private var ofertasViewModel = OfertasViewModel()
     
     var body: some View {
         ScrollView(.vertical, showsIndicators: false){
@@ -42,38 +43,26 @@ struct SeccionCuerpoOfertasView: View {
                 //Seccion Tarjetas Ofertas
                 //FALTA AGREGAR FOREACH PARA QUE SE GENEREN DINAMICAMENTE LAS
                 //TARJETAS
-                CustomTarjetaOfertas(
-                    image: "oferta_pizza",
-                    title: "La Nueva Pizza",
-                    description: "Disfruta de nuestra nueva pizza en esta promocion. ¡No te lo pierdas!",
-                    price: 12.99,
-                    validez: "Del 10 al 20 de noviembre",
-                    onAddToCart: {print("Se añadio al carrito")}
-                ).padding(.top, 10)
-                
-                CustomTarjetaOfertas(
-                    image: "oferta_tacos",
-                    title: "La Nueva Pizza",
-                    description: "Disfruta de nuestra nueva pizza en esta promocion. ¡No te lo pierdas!",
-                    price: 12.99,
-                    validez: "Del 10 al 20 de noviembre",
-                    onAddToCart: {print("Se añadio al carrito")}
-                ).padding(.top, 10)
-                
-                CustomTarjetaOfertas(
-                    image: "oferta_bebidas",
-                    title: "La Nueva Pizza",
-                    description: "Disfruta de nuestra nueva pizza en esta promocion. ¡No te lo pierdas!",
-                    price: 12.99,
-                    validez: "Del 10 al 20 de noviembre",
-                    onAddToCart: {print("Se añadio al carrito")}
-                ).padding(.top, 10)
+                ForEach(ofertasViewModel.ofertas){ oferta in
+                    CustomTarjetaOfertas(
+                        image: "https://i0.wp.com/goula.lat/wp-content/uploads/2019/12/hamburguesa-beyond-meat-scaled-e1577396155298.jpg?fit=1600%2C1068&ssl=1",
+                        title: oferta.nombre,
+                        description: oferta.descripcion,
+                        price: oferta.precio,
+                        validez: oferta.validez,
+                        onAddToCart: {
+                            print("\(oferta.nombre) añadido al carrito")
+                        }
+                    ).padding(.top, 10)
+                }
             }
             .padding(.bottom, 20)
         }
         .padding(.horizontal, 20)
         .onAppear{
+            //Carga los datos de Firebase al cargar la vista
             usuarioViewModel.fetchUsuario()
+            ofertasViewModel.fetchOfertas()
         }
     }
 }

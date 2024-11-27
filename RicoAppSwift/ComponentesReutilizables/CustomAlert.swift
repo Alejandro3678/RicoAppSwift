@@ -14,7 +14,6 @@ struct CustomAlert: View {
     var mensaje: String
     
     var body: some View {
-        
         GeometryReader{_ in
             VStack(alignment: .center){
                 Image(systemName: iconName)

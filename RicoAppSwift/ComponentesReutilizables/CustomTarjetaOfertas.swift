@@ -18,12 +18,20 @@ struct CustomTarjetaOfertas: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 10){
             //Imagen
+            RemoteImage(url: image)
+                .frame(height: 150)
+                .aspectRatio(contentMode: .fill)
+                .clipped()
+                .cornerRadius(10)
+
+            /*
             Image(image)
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(height: 150)
                 .clipped()
                 .cornerRadius(10)
+            */
             
             //Titulo
             Text(title)
