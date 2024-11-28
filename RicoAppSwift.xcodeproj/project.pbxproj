@@ -15,6 +15,12 @@
 		0C74A9E92CF0398C00365588 /* SeccionCuerpoOfertasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C74A9E82CF0398C00365588 /* SeccionCuerpoOfertasView.swift */; };
 		0C74A9EC2CF045E400365588 /* CustomTarjetaOfertas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C74A9EB2CF045E400365588 /* CustomTarjetaOfertas.swift */; };
 		0C7B08412CF16F9D003DFB4A /* CustomTarjetaPedido.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7B08402CF16F9D003DFB4A /* CustomTarjetaPedido.swift */; };
+		0C844BFD2CF77E2900A940E6 /* Categorias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C844BFC2CF77E2900A940E6 /* Categorias.swift */; };
+		0C844C002CF77E8300A940E6 /* CategoriasViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C844BFF2CF77E8300A940E6 /* CategoriasViewModel.swift */; };
+		0C844C0A2CF786AB00A940E6 /* Platillos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C844C092CF786AB00A940E6 /* Platillos.swift */; };
+		0C844C0D2CF7925400A940E6 /* PlatillosCategoriasViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C844C0C2CF7925300A940E6 /* PlatillosCategoriasViewModel.swift */; };
+		0C844C142CF79A5800A940E6 /* PlatillosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C844C132CF79A5800A940E6 /* PlatillosView.swift */; };
+		0C844C182CF79AAE00A940E6 /* SeccionCuerpoPlatillosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C844C172CF79AAE00A940E6 /* SeccionCuerpoPlatillosView.swift */; };
 		0C87ABAF2CEE588A001237BF /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C87ABAE2CEE588A001237BF /* SplashScreenView.swift */; };
 		0C87ABB32CEE6E0F001237BF /* InicioSesionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C87ABB22CEE6E0F001237BF /* InicioSesionView.swift */; };
 		0CAA3DBB2CF0077C0005AE98 /* PerfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAA3DBA2CF0077C0005AE98 /* PerfilView.swift */; };
@@ -76,6 +82,12 @@
 		0C74A9E82CF0398C00365588 /* SeccionCuerpoOfertasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeccionCuerpoOfertasView.swift; sourceTree = "<group>"; };
 		0C74A9EB2CF045E400365588 /* CustomTarjetaOfertas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTarjetaOfertas.swift; sourceTree = "<group>"; };
 		0C7B08402CF16F9D003DFB4A /* CustomTarjetaPedido.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTarjetaPedido.swift; sourceTree = "<group>"; };
+		0C844BFC2CF77E2900A940E6 /* Categorias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categorias.swift; sourceTree = "<group>"; };
+		0C844BFF2CF77E8300A940E6 /* CategoriasViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriasViewModel.swift; sourceTree = "<group>"; };
+		0C844C092CF786AB00A940E6 /* Platillos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Platillos.swift; sourceTree = "<group>"; };
+		0C844C0C2CF7925300A940E6 /* PlatillosCategoriasViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatillosCategoriasViewModel.swift; sourceTree = "<group>"; };
+		0C844C132CF79A5800A940E6 /* PlatillosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatillosView.swift; sourceTree = "<group>"; };
+		0C844C172CF79AAE00A940E6 /* SeccionCuerpoPlatillosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeccionCuerpoPlatillosView.swift; sourceTree = "<group>"; };
 		0C87ABAE2CEE588A001237BF /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		0C87ABB22CEE6E0F001237BF /* InicioSesionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioSesionView.swift; sourceTree = "<group>"; };
 		0CAA3DBA2CF0077C0005AE98 /* PerfilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilView.swift; sourceTree = "<group>"; };
@@ -246,6 +258,8 @@
 			children = (
 				0CD6CDB02CEF932F004F1EF7 /* CategoriasView.swift */,
 				0CE9E9842CF0F5A300319CE1 /* SeccionCuerpoCategoriasView.swift */,
+				0C844C132CF79A5800A940E6 /* PlatillosView.swift */,
+				0C844C172CF79AAE00A940E6 /* SeccionCuerpoPlatillosView.swift */,
 			);
 			path = Categorias;
 			sourceTree = "<group>";
@@ -291,6 +305,8 @@
 			children = (
 				0CD6D26C2CF2CAEB00F9C18D /* Usuarios.swift */,
 				0CD064C12CF6D7B500187195 /* Ofertas.swift */,
+				0C844BFC2CF77E2900A940E6 /* Categorias.swift */,
+				0C844C092CF786AB00A940E6 /* Platillos.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -302,6 +318,8 @@
 				0CE5A3E82CF6811100C55F98 /* UsuarioViewModel.swift */,
 				0CE5A3EB2CF68A9A00C55F98 /* RecuperarPasswordViewModel.swift */,
 				0CD064C42CF6D8F400187195 /* OfertasViewModel.swift */,
+				0C844BFF2CF77E8300A940E6 /* CategoriasViewModel.swift */,
+				0C844C0C2CF7925300A940E6 /* PlatillosCategoriasViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -461,10 +479,12 @@
 				0CF8FFD52CF22415002B284B /* SeccionCuerpoRealizarReservaView.swift in Sources */,
 				0CD064C52CF6D8F400187195 /* OfertasViewModel.swift in Sources */,
 				0CE9E97E2CF0EFB900319CE1 /* CustomTarjetasCategorias.swift in Sources */,
+				0C844C0A2CF786AB00A940E6 /* Platillos.swift in Sources */,
 				0CD6CDAD2CEF8FA9004F1EF7 /* CustomNavigationBar.swift in Sources */,
 				0CDCC0442CF5310300AB647A /* CustomAlert.swift in Sources */,
 				0CE9E9882CF0FFB700319CE1 /* SeccionCuerpoMenuView.swift in Sources */,
 				0CD6D26D2CF2CAEB00F9C18D /* Usuarios.swift in Sources */,
+				0C844C182CF79AAE00A940E6 /* SeccionCuerpoPlatillosView.swift in Sources */,
 				0CE4A4512CEEDB29000C1928 /* RecuperarPasswordView.swift in Sources */,
 				0C74A9E92CF0398C00365588 /* SeccionCuerpoOfertasView.swift in Sources */,
 				0CD064CB2CF6E33800187195 /* RemoteImage.swift in Sources */,
@@ -484,6 +504,8 @@
 				0CAA3DBB2CF0077C0005AE98 /* PerfilView.swift in Sources */,
 				0CD6CDB62CEF934D004F1EF7 /* MenuView.swift in Sources */,
 				0C7B08412CF16F9D003DFB4A /* CustomTarjetaPedido.swift in Sources */,
+				0C844C002CF77E8300A940E6 /* CategoriasViewModel.swift in Sources */,
+				0C844C142CF79A5800A940E6 /* PlatillosView.swift in Sources */,
 				0CEA9B062CF032F800B34360 /* CarruselView.swift in Sources */,
 				0CF051ED2CEEB90B00035259 /* CustomTextField.swift in Sources */,
 				0CCC86E82CF1ADBC003E2141 /* EditarPerfilView.swift in Sources */,
@@ -495,11 +517,13 @@
 				0CD6D2692CF2C8EE00F9C18D /* AuthService.swift in Sources */,
 				0CD064C82CF6E1A600187195 /* ImageLoader.swift in Sources */,
 				0C3DC4EC2CF167220097B2B4 /* PedidosView.swift in Sources */,
+				0C844BFD2CF77E2900A940E6 /* Categorias.swift in Sources */,
 				0CD064C22CF6D7B600187195 /* Ofertas.swift in Sources */,
 				0CE4A45B2CEEE49C000C1928 /* CustomAppBarSecondary.swift in Sources */,
 				0CDDF4C82CEF0ACF000888AF /* OfertasView.swift in Sources */,
 				0CF8FFD22CF22400002B284B /* RealizarReservaView.swift in Sources */,
 				0CCC86EB2CF1AF6D003E2141 /* SeccionCuerpoPerfilView.swift in Sources */,
+				0C844C0D2CF7925400A940E6 /* PlatillosCategoriasViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

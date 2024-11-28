@@ -10,12 +10,16 @@ import SwiftUI
 struct PerfilView: View {
     @State private var isMenuOpen = false
     @StateObject private var authViewModel = AuthViewModel()
+    
+    @Environment(\.presentationMode) var presentationMode
 
     var body: some View {
         ZStack{
             //Contenido Principal
             VStack{
-                CustomAppBarSecondary(destination: CustomNavigationBar())
+                CustomAppBarSecondary(onBackButtonPressed: {
+                    presentationMode.wrappedValue.dismiss()
+                })
                         
                 SeccionCuerpoPerfilView()
             }

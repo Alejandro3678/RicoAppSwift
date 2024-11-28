@@ -18,14 +18,12 @@ struct CategoriasView: View {
             VStack{
                 CustomAppBarPrimary(isMenuOpen: $isMenuOpen)
                         
-                //Spacer()
-                        
                 SeccionCuerpoCategoriasView()
                 
-                //Spacer()
             }
             .zIndex(0)
             .disabled(isMenuOpen)
+            .navigationBarHidden(true)
                     
             //Menu lateral
             if isMenuOpen {
@@ -45,7 +43,8 @@ struct CategoriasView: View {
                     }
                 }
         )
-        //.ignoresSafeArea()
+        .navigationBarBackButtonHidden(true)
+        .navigationBarHidden(true)
     }
 }
 

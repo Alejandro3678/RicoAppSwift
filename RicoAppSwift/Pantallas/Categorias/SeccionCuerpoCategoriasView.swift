@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct SeccionCuerpoCategoriasView: View {
+    @StateObject private var categoriasViewModel = CategoriasViewModel()
+    @State private var seleccionarCategoria: Categorias?
+    
     var body: some View {
         ScrollView(.vertical, showsIndicators: false){
             VStack(alignment: .center, spacing: 10){
@@ -31,15 +34,31 @@ struct SeccionCuerpoCategoriasView: View {
                 
                 //Tarjeta de Categoria
                 LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 5), count: 2), spacing: 20) {
-                    ForEach(0..<6) { _ in
-                        CustomTarjetasCategorias(
-                            imagenCategoria: "logo_menu",
-                            nombreCategoria: "Pizzas"
-                        )
+                    ForEach(categoriasViewModel.categorias) { categoria in
+                        NavigationLink(
+                            destination: PlatillosView(idCategoria: categoria.id, nombreCategoria: categoria.nombreCategoria).navigationBarBackButtonHidden(true) .navigationBarHidden(true)
+                        ){
+                            CustomTarjetasCategorias(
+                                imagenCategoria: categoria.imagenUrl,
+                                nombreCategoria: categoria.nombreCategoria
+                            )
+                            .onTapGesture {
+                                seleccionarCategoria = categoria
+                            }
+                        }
                     }
                 }
             }
-            .padding()
+            .padding(.top, 10)
+            .padding(.horizontal, 20)
+            .navigationBarBackButtonHidden(true)
+            .navigationBarHidden(true)
+            .onAppear{
+                categoriasViewModel.fetchCategorias()
+            }
+            .fullScreenCover(item: $seleccionarCategoria) { categoria in
+                PlatillosView(idCategoria: categoria.id, nombreCategoria: categoria.nombreCategoria)
+            }
         }
     }
 }

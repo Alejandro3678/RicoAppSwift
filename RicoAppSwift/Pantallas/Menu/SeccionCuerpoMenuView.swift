@@ -31,8 +31,7 @@ struct SeccionCuerpoMenuView: View {
                         image: "oferta_pizza",
                         title: "Nachos",
                         description: "Totopos de maiz crujientes cubiertos con queso",
-                        price: 4.25,
-                        onAddToCart: {print("Se añadio al carrito")}
+                        price: 4.25
                     )
                 }
             }

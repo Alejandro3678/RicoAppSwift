@@ -11,11 +11,15 @@ struct EditarPerfilView: View {
     @State private var isMenuOpen = false
     @StateObject private var authViewModel = AuthViewModel()
     
+    @Environment(\.presentationMode) var presentationMode
+    
     var body: some View {
         ZStack{
             //Contenido Principal
             VStack{
-                CustomAppBarSecondary(destination: PerfilView())
+                CustomAppBarSecondary(onBackButtonPressed: {
+                    presentationMode.wrappedValue.dismiss()
+                })
                         
                 SeccionCuerpoEditarPerfilView()
             }

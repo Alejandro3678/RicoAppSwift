@@ -12,14 +12,12 @@ struct CustomTarjetaPlatillos: View {
     let title: String
     let description: String
     let price: Double
-    let onAddToCart: () -> Void
     
     var body: some View {
         VStack(alignment: .center, spacing: 10){
             HStack(spacing: 15){
                 //Imagen
-                Image(image)
-                    .resizable()
+                RemoteImage(url: image)
                     .aspectRatio(contentMode: .fill)
                     .frame(width: 150 ,height: 100)
                     .clipped()
@@ -45,7 +43,9 @@ struct CustomTarjetaPlatillos: View {
                         .foregroundColor(.orange)
                 }
             }
-            Button(action: onAddToCart){
+            Button(action: {
+                //aCCION
+            }){
                 Text("Añadir al carrito")
                     .font(.custom("Roboto Bold", size: 15))
                     .foregroundColor(.white)
@@ -69,8 +69,7 @@ struct CustomTarjetaPlatillos_Previews: PreviewProvider {
             image: "oferta_pizza",
             title: "Nachos",
             description: "Totopos de maiz crujientes cubiertos con queso",
-            price: 4.25,
-            onAddToCart: {print("Se añadio al carrito")}
+            price: 4.25
         )
     }
 }

@@ -11,10 +11,15 @@ struct RecuperarPasswordView: View {
     @State private var correo = ""
     @StateObject private var recuperarPasswordViewModel = RecuperarPasswordViewModel()
     
+    @Environment(\.presentationMode) var presentationMode
+    
     var body: some View {
         NavigationView{
             VStack{
-                CustomAppBarSecondary(destination: InicioSesionView())
+                CustomAppBarSecondary(onBackButtonPressed: {
+                    presentationMode.wrappedValue.dismiss()
+                })
+                    
                 VStack(spacing: 20){
                     CustomTextField(
                         placeholder: "Ingresa tu direccion de correo",
@@ -43,8 +48,8 @@ struct RecuperarPasswordView: View {
                 .alert(isPresented: $recuperarPasswordViewModel.showAlert){
                     Alert(title: Text("Recuperación de contraseña"), message: Text(recuperarPasswordViewModel.alertMessage), dismissButton: .default(Text("Aceptar")))
                 }
-                .navigationBarHidden(true)
             }
+            .navigationBarHidden(true)
         }
     }
 }

@@ -7,18 +7,19 @@
 
 import SwiftUI
 
-struct CustomAppBarSecondary<Destination: View>: View {
-    var destination: Destination
+struct CustomAppBarSecondary: View {
+    var onBackButtonPressed: () -> Void
     
     var body: some View {
         HStack{
-            NavigationLink(destination: destination.navigationBarBackButtonHidden(true) .navigationBarHidden(true)) {
+            Button(action: {
+                onBackButtonPressed()
+            }){
                 Image(systemName: "arrow.left")
                     .resizable()
                     .frame(width: 20, height: 20)
                     .foregroundColor(.black)
             }
-            
             
             Spacer()
             
@@ -44,6 +45,8 @@ struct CustomAppBarSecondary<Destination: View>: View {
 
 struct CustomAppBarSecondary_Previews: PreviewProvider {
     static var previews: some View {
-        CustomAppBarSecondary(destination: Text("Destino ejemplo"))
+        CustomAppBarSecondary(onBackButtonPressed: {
+            Text("Regresar")
+        })
     }
 }

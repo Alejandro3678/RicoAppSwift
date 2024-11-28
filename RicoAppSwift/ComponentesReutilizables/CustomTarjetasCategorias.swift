@@ -14,14 +14,13 @@ struct CustomTarjetasCategorias: View {
     var body: some View {
         VStack{
             //Imagen
-            Image(imagenCategoria)
-                .resizable()
-                .scaledToFit()
+            RemoteImage(url: imagenCategoria)
                 .frame(width: 100, height: 100)
+                .aspectRatio(contentMode: .fill)
                 .clipped()
-            
+ 
             Text(nombreCategoria)
-                .font(.custom("Roboto Bold", size: 18))
+                .font(.custom("Roboto Bold", size: 15))
                 .foregroundColor(.white)
                 .lineLimit(nil)
                 .fixedSize(horizontal: false, vertical: true)
