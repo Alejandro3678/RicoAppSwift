@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import FirebaseAuth
 
 struct PerfilView: View {
     @State private var isMenuOpen = false
@@ -20,8 +21,10 @@ struct PerfilView: View {
                 CustomAppBarSecondary(onBackButtonPressed: {
                     presentationMode.wrappedValue.dismiss()
                 })
-                        
-                SeccionCuerpoPerfilView()
+                
+                let userID = Auth.auth().currentUser?.uid ?? ""
+                    
+                SeccionCuerpoPerfilView(userID: userID)
             }
             .zIndex(0)
             .disabled(isMenuOpen)

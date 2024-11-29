@@ -28,7 +28,8 @@ struct SeccionCuerpoPedidosView: View {
             price: 3.50
         ),
     ]
-    @State private var totalCompra: Double = 10.50
+    
+    @State private var totalCompra: Double = 0.0
     @State private var showAlert = false
     
     var body: some View {

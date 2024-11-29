@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct SeccionCuerpoMenuView: View {
+    @StateObject private var platillosViewModel = PlatillosCategoriasViewModel()
+    
     var body: some View {
         ScrollView(.vertical, showsIndicators: false){
             VStack(alignment: .center, spacing: 10){
@@ -26,16 +28,19 @@ struct SeccionCuerpoMenuView: View {
                     .foregroundColor(.black)
                     .lineLimit(1)
                 
-                ForEach(0..<5) { _ in
+                ForEach(platillosViewModel.platillos) { platillos in
                     CustomTarjetaPlatillos(
-                        image: "oferta_pizza",
-                        title: "Nachos",
-                        description: "Totopos de maiz crujientes cubiertos con queso",
-                        price: 4.25
+                        image: platillos.imagenPlatillo,
+                        title: platillos.nombrePlatillo,
+                        description: platillos.descripcionPlatillo,
+                        price: platillos.precioProducto
                     )
                 }
             }
             .padding()
+        }
+        .onAppear{
+            platillosViewModel.fetchAllPlatillos()
         }
     }
 }

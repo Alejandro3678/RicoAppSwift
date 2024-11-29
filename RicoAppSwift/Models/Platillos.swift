@@ -11,7 +11,7 @@ import FirebaseFirestore
 
 struct Platillos: Identifiable, Codable{
     @DocumentID var id: String?
-    var idCategoria: String
+    var idCategoria: String?
     var imagenPlatillo: String
     var nombrePlatillo: String
     var descripcionPlatillo: String

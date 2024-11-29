@@ -40,14 +40,12 @@ struct SeccionCuerpoRealizarReservaView: View {
                     title: "TELEFONO:"
                 )
                 
-                CustomTextField(
-                    placeholder: "Ejemplo de solicitud",
+                CustomTextEditor(
                     text: $solicitudEspecial,
                     title: "SOLICITUDES ESPECIALES:"
                 )
                 
-                CustomTextField(
-                    placeholder: "Ejemplo de comentario",
+                CustomTextEditor(
                     text: $comentarios,
                     title: "COMENTARIOS:"
                 )

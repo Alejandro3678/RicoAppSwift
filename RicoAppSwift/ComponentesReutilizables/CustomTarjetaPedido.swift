@@ -28,9 +28,10 @@ struct CustomTarjetaPedido: View {
                 VStack(alignment: .leading, spacing: 10){
                     //Titulo
                     Text(title)
-                        .font(.custom("Allerta", size: 22))
+                        .font(.custom("Allerta", size: 18))
                         .foregroundColor(.black)
-                        .lineLimit(1)
+                        .lineLimit(nil)
+                        .fixedSize(horizontal: false, vertical: true)
                     
                     //Descripcion
                     Text(description)

@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct SeccionCuerpoEditarPerfilView: View {
-    @State private var nombres: String = ""
-    @State private var apellidos: String = ""
-    @State private var telefono: String = ""
+    @State var nombres: String
+    @State var apellidos: String
+    @State var telefono: String
+    
+    var onSave: (String, String, String) -> Void
     
     var body: some View {
         ScrollView(.vertical, showsIndicators: false){
@@ -58,6 +60,7 @@ struct SeccionCuerpoEditarPerfilView: View {
                             // Botón de guardar
                     Button(action: {
                         // Acción para guardar los datos
+                        onSave(nombres, apellidos, telefono)
                     }) {
                         Text("GUARDAR")
                             .font(.custom("Roboto Bold", size: 20))
@@ -75,8 +78,10 @@ struct SeccionCuerpoEditarPerfilView: View {
     }
 }
 
+/*
 struct SeccionCuerpoEditarPerfilView_Previews: PreviewProvider {
     static var previews: some View {
         SeccionCuerpoEditarPerfilView()
     }
 }
+*/

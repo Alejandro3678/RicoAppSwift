@@ -8,6 +8,7 @@
 import Foundation
 
 struct Usuarios: Codable {
+    var id: String?
     var nombres: String
     var apellidos: String
     var telefono: String

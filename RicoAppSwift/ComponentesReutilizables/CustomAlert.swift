@@ -19,7 +19,7 @@ struct CustomAlert: View {
                 Image(systemName: iconName)
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 40, height: 40)
+                    .frame(width: 40, height: 50)
                     .foregroundColor(iconColor)
                 
                 ScrollView(.vertical, showsIndicators: false){

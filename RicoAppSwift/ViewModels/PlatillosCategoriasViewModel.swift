@@ -36,4 +36,36 @@ class PlatillosCategoriasViewModel: ObservableObject {
                 } ?? []
             }
     }
+    
+    //PARA TRAER TODOS LOS PLATILLOS DE LA COLECCION PRODUCTOS
+    func fetchAllPlatillos(){
+        db.collection("Productos").getDocuments { snapshot, error in
+            if let error = error {
+                print("Error al obtener productos: \(error)")
+                return
+            }
+                    
+            guard let documents = snapshot?.documents else { return }
+                    
+            self.platillos = documents.compactMap { doc -> Platillos? in
+                let data = doc.data()
+                guard
+                    let imagenPlatillo = data["ImagenProducto"] as? String,
+                    let nombrePlatillo = data["NombreProducto"] as? String,
+                    let descripcionPlatillo = data["DescripcionProducto"] as? String,
+                    let precioPlatillo = data["PrecioProducto"] as? Double
+                else {
+                    return nil
+                }
+                            
+                return Platillos(
+                    id: doc.documentID,
+                    imagenPlatillo: imagenPlatillo,
+                    nombrePlatillo: nombrePlatillo,
+                    descripcionPlatillo: descripcionPlatillo,
+                    precioProducto: precioPlatillo
+                )
+            }
+        }
+    }
 }

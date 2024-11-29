@@ -69,6 +69,9 @@
 		0CF051ED2CEEB90B00035259 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF051EC2CEEB90B00035259 /* CustomTextField.swift */; };
 		0CF8FFD22CF22400002B284B /* RealizarReservaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF8FFD12CF22400002B284B /* RealizarReservaView.swift */; };
 		0CF8FFD52CF22415002B284B /* SeccionCuerpoRealizarReservaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF8FFD42CF22415002B284B /* SeccionCuerpoRealizarReservaView.swift */; };
+		0CFCDE062CF8FEF200F9636D /* CustomTextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFCDE052CF8FEF200F9636D /* CustomTextEditor.swift */; };
+		0CFD6F8B2CF92CF000CAE61B /* Reservas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFD6F8A2CF92CF000CAE61B /* Reservas.swift */; };
+		0CFD6F8E2CF92D6C00CAE61B /* ReservasViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFD6F8D2CF92D6C00CAE61B /* ReservasViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -131,6 +134,9 @@
 		0CF051EC2CEEB90B00035259 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		0CF8FFD12CF22400002B284B /* RealizarReservaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealizarReservaView.swift; sourceTree = "<group>"; };
 		0CF8FFD42CF22415002B284B /* SeccionCuerpoRealizarReservaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeccionCuerpoRealizarReservaView.swift; sourceTree = "<group>"; };
+		0CFCDE052CF8FEF200F9636D /* CustomTextEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextEditor.swift; sourceTree = "<group>"; };
+		0CFD6F8A2CF92CF000CAE61B /* Reservas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reservas.swift; sourceTree = "<group>"; };
+		0CFD6F8D2CF92D6C00CAE61B /* ReservasViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservasViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -307,6 +313,7 @@
 				0CD064C12CF6D7B500187195 /* Ofertas.swift */,
 				0C844BFC2CF77E2900A940E6 /* Categorias.swift */,
 				0C844C092CF786AB00A940E6 /* Platillos.swift */,
+				0CFD6F8A2CF92CF000CAE61B /* Reservas.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -320,6 +327,7 @@
 				0CD064C42CF6D8F400187195 /* OfertasViewModel.swift */,
 				0C844BFF2CF77E8300A940E6 /* CategoriasViewModel.swift */,
 				0C844C0C2CF7925300A940E6 /* PlatillosCategoriasViewModel.swift */,
+				0CFD6F8D2CF92D6C00CAE61B /* ReservasViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -386,6 +394,7 @@
 				0CDCC0432CF5310300AB647A /* CustomAlert.swift */,
 				0CD064C72CF6E1A600187195 /* ImageLoader.swift */,
 				0CD064CA2CF6E33800187195 /* RemoteImage.swift */,
+				0CFCDE052CF8FEF200F9636D /* CustomTextEditor.swift */,
 			);
 			path = ComponentesReutilizables;
 			sourceTree = "<group>";
@@ -497,8 +506,10 @@
 				0CD6CDBB2CEF9373004F1EF7 /* ReservasView.swift in Sources */,
 				0CDDF4C42CEF0354000888AF /* CustomMenuLateral.swift in Sources */,
 				0C5B66E72CED9C5E0067ACED /* ContentView.swift in Sources */,
+				0CFD6F8E2CF92D6C00CAE61B /* ReservasViewModel.swift in Sources */,
 				0CE9E97B2CF0E61400319CE1 /* CustomTarjetaPlatillos.swift in Sources */,
 				0CD6CDB12CEF932F004F1EF7 /* CategoriasView.swift in Sources */,
+				0CFCDE062CF8FEF200F9636D /* CustomTextEditor.swift in Sources */,
 				0CD87A012CF21A5300560783 /* SeccionCuerpoPedidosView.swift in Sources */,
 				0CCC86E52CF1AC41003E2141 /* SeccionCuerpoEditarPerfilView.swift in Sources */,
 				0CAA3DBB2CF0077C0005AE98 /* PerfilView.swift in Sources */,
@@ -523,6 +534,7 @@
 				0CDDF4C82CEF0ACF000888AF /* OfertasView.swift in Sources */,
 				0CF8FFD22CF22400002B284B /* RealizarReservaView.swift in Sources */,
 				0CCC86EB2CF1AF6D003E2141 /* SeccionCuerpoPerfilView.swift in Sources */,
+				0CFD6F8B2CF92CF000CAE61B /* Reservas.swift in Sources */,
 				0C844C0D2CF7925400A940E6 /* PlatillosCategoriasViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
